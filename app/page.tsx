@@ -1,3 +1,10 @@
+import React from "react";
+import Main from "@/app/components/Main";
+
 export default function Home() {
-  return <div className="h-screen bg-[#141516]">Page</div>;
+  return (
+    <div className="mt-10 py-10 ">
+      <Main />
+    </div>
+  );
 }

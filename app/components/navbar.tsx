@@ -1,13 +1,14 @@
 "use client";
 
-import { motion } from "framer-motion";
 import Link from "next/link";
-import { useState } from "react";
 import React from "react";
+import { useState } from "react";
+import { motion } from "framer-motion";
 
 // icons
 import { FiMail, FiGithub, FiTwitter, FiLinkedin } from "react-icons/fi";
 
+//data
 import { contactLinks } from "@/data/contact";
 
 const tabs = [
@@ -46,7 +47,7 @@ const social = [
 function Navbar() {
   let [activeTab, setActiveTab] = useState(tabs[0].id);
   return (
-    <div className="flex justify-around space-x-10 items-center">
+    <div className="sticky z-10 top-8 flex justify-around space-x-10 items-center">
       {/* logo  */}
       <Link href="/">
         <div className="flex justify-center text-xl items-center">
@@ -56,13 +57,13 @@ function Navbar() {
       </Link>
 
       {/* navigation */}
-      <div className="flex space-x-1.5 w-96 rounded-full py-1.5 px-2 border-2 border-zinc-800 drop-shadow-lg">
+      <div className="flex space-x-1.5 w-96 rounded-full py-1.5 px-2 border-2 border-zinc-800 drop-shadow-lg backdrop-filter backdrop-blur-sm  bg-opacity-30">
         {tabs.map((tab) => (
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
             className={`${
-              activeTab === tab.id ? "text-red-300" : "hover:text-[#FE9FA1]"
+              activeTab === tab.id ? "text-red-400" : "hover:text-[#FE9FA1]"
             } relative rounded-full px-4 py-1 text-sm font-lighter text-white  transition focus-visible:outline-2`}
             style={{
               WebkitTapHighlightColor: "transparent",
@@ -84,11 +85,14 @@ function Navbar() {
       {/* contact  */}
       <div className="flex text-lg space-x-4 ">
         {social.map((item, id) => (
-          <div>
-            <a href={item.href} target="_blank" key={id}>
-              {item.logo}
-            </a>
-          </div>
+          <a
+            href={item.href}
+            target="_blank"
+            key={id}
+            className="hover:text-[#FE9FA1] delay-75"
+          >
+            {item.logo}
+          </a>
         ))}
       </div>
     </div>
