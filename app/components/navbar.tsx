@@ -63,7 +63,7 @@ function Navbar() {
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
             className={`${
-              activeTab === tab.id ? "text-red-400" : "hover:text-[#FE9FA1]"
+              activeTab === tab.id ? "text-rose-300" : "hover:text-[#FE9FA1]"
             } relative rounded-full px-4 py-1 text-sm font-lighter text-white  transition focus-visible:outline-2`}
             style={{
               WebkitTapHighlightColor: "transparent",
@@ -89,7 +89,7 @@ function Navbar() {
             href={item.href}
             target="_blank"
             key={id}
-            className="hover:text-[#FE9FA1] delay-75"
+            className="hover:text-[#FE9FA1] delay-75 hover:font-bold hover:scale-125 transition-transform duration-100 ease-out"
           >
             {item.logo}
           </a>

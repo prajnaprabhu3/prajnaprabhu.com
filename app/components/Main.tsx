@@ -6,7 +6,7 @@ import React from "react";
 
 function Main() {
   return (
-    <div className="flex justify-center items-center py-10 overflow-y-hidden">
+    <div className="flex justify-center items-center  overflow-y-hidden">
       {/* short about me  */}
       <div className="flex flex-col justify-center gap-y-10 w-2/3 text-md px-2 text-zinc-400 ">
         <p>
@@ -32,8 +32,8 @@ function Main() {
           <u className="text-[#FE9FA1]">
             <Link href="/books">here</Link>
           </u>
-          . f you are someone in my circle(friends or someone from the same
-          location) and want to read any of my collection, drop me a text
+          . f you are someone in my circle and want to read any of my
+          collection, drop me a text
         </p>
       </div>
 

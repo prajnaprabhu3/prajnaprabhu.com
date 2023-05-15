@@ -18,14 +18,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`bg-[#141516] h-screen text-gray-300 {inter.className}`}>
+      <body
+        className={`bg-[#141516] h-screen flex flex-col justify-between text-gray-300 {inter.className}`}
+      >
         <Navbar />
 
-        <div className="flex mt-20 mx-auto w-2/3 justify-around items-center ">
+        <div className="flex mx-auto w-2/3 justify-around items-center ">
           {children}
         </div>
 
-        <div className="flex justify-center mt-36 text-sm text-zinc-400">
+        <div className="sticky bottom-0">
           <Footer />
         </div>
       </body>

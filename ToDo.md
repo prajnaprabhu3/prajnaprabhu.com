@@ -1,1 +1,4 @@
-[] everything in the design for now
+- [] Add kmenu
+- [] Get done with about page
+- [] fix favicon stuff
+- [x] footer
