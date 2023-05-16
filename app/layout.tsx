@@ -1,14 +1,15 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
 import { metadataInfo } from "../data/metadata";
 import Navbar from "./components/navbar";
 import Footer from "@/app/components/footer";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata = {
   title: `${metadataInfo.title}`,
   description: `${metadataInfo.description}`,
+  // icons: {
+  //   icon: { url: "/favicon.png", type: "image/png" },
+  //   shortcut: { url: "/favicon.png", type: "image/png" },
+  // },
 };
 
 export default function RootLayout({
@@ -23,7 +24,7 @@ export default function RootLayout({
       >
         <Navbar />
 
-        <div className="flex mx-auto w-2/3 justify-around items-center ">
+        <div className="flex mx-auto justify-around items-center ">
           {children}
         </div>
 

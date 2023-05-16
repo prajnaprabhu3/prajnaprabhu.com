@@ -1,14 +1,12 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 function Main() {
   return (
-    <div className="flex justify-center items-center  overflow-y-hidden">
+    <div className="flex-col-reverse px-2 mt-14 lg:mt-0 lg:flex-row lg-flex-row flex justify-center items-center md:px-48  overflow-y-hidden">
       {/* short about me  */}
-      <div className="flex flex-col justify-center gap-y-10 w-2/3 text-md px-2 text-zinc-400 ">
+      <div className="text-sm flex w-ful py-6 px-4 flex-col justify-center gap-y-10 lg:w-2/3 md:text-md text-zinc-400 mainText ">
         <p>
           I'm a fullstack developer who loves building minimal, modern and
           beautiful websites, mobile apps, and user interfaces.
@@ -32,8 +30,8 @@ function Main() {
           <u className="text-[#FE9FA1]">
             <Link href="/books">here</Link>
           </u>
-          . f you are someone in my circle and want to read any of my
-          collection, drop me a text
+          .If you are someone in my circle and want to read any of my
+          collection, drop me a text via WhatsApp.
         </p>
       </div>
 
@@ -42,9 +40,9 @@ function Main() {
       <Image
         alt="me"
         height="300"
-        width="300"
+        width="320"
         src="/images/me.png"
-        className="mx-20"
+        className="w-48 lg:w-80 rounded-sm mx-20"
       />
       {/* </div> */}
     </div>

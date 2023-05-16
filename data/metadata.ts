@@ -1,4 +1,4 @@
 export const metadataInfo = {
-  title: "Prajna",
+  title: "Prajna Prabhu",
   description: "Prajna's portfolio site",
 };
