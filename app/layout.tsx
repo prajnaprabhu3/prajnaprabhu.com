@@ -6,10 +6,6 @@ import Footer from "@/app/components/footer";
 export const metadata = {
   title: `${metadataInfo.title}`,
   description: `${metadataInfo.description}`,
-  // icons: {
-  //   icon: { url: "/favicon.png", type: "image/png" },
-  //   shortcut: { url: "/favicon.png", type: "image/png" },
-  // },
 };
 
 export default function RootLayout({
