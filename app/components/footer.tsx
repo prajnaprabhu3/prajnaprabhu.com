@@ -1,30 +1,9 @@
-// import React from "react";
-
-// function Footer() {
-//   return (
-//     // <div className="sticky bottom-0 flex justify-center border-t border-zinc-800 w-full pt-2.5">
-//     //   <p>© Prajna Prabhu 2023. No cookies here 🍪 </p>
-//     // </div>
-//     <div className="flex justify-center text-sm py-4 font-normal text-zinc-400 border-t border-zinc-800">
-//       <p>© Prajna Prabhu 2023. No cookies here 🍪 </p>
-//     </div>
-//   );
-// }
-
-// export default Footer;
-
 "use client";
 
 import Link from "next/link";
 import React from "react";
 import { useState } from "react";
 import { motion } from "framer-motion";
-
-// icons
-import { FiMail, FiGithub, FiTwitter, FiLinkedin } from "react-icons/fi";
-
-//data
-import { contactLinks } from "@/data/contact";
 
 const tabs = [
   { id: "home", label: "Home", path: "/" },
@@ -34,33 +13,8 @@ const tabs = [
   { id: "books", label: "Books", path: "/books" },
 ];
 
-const social = [
-  {
-    id: "email",
-    logo: <FiMail />,
-    href: contactLinks.email,
-  },
-  {
-    id: "github",
-    logo: <FiGithub />,
-    href: contactLinks.github,
-  },
-  {
-    id: "twitter",
-    logo: <FiTwitter />,
-    href: contactLinks.twitter,
-  },
-  {
-    id: "linkedin",
-    logo: <FiLinkedin />,
-    href: contactLinks.linkedin,
-  },
-];
-
-// console.log(contactLinks.linkedin);
-
 function Footer() {
-  let [activeTab, setActiveTab] = useState(tabs[0].id);
+  const [activeTab, setActiveTab] = useState(tabs[0].id);
   return (
     <>
       <div className="md:hidden lg:hidden sticky z-10 mb-4 flex justify-around space-x-10 items-center">

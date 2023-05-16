@@ -3,7 +3,7 @@ echo '☕️ Styling, testing and building your project before committing'
 # Check Prettier standards
 pnpm run check-format ||
 (
-    echo ' Your styling doesn't looks fine ⚠️
+    echo ' Your style is not looking fine ⚠️
             Prettier Check Failed. Run pnpm run format, add changes and try commit again.';
     false;
 )
@@ -36,4 +36,4 @@ pnpm run build ||
 )
 
 # If everything passes... Now we can commit
-echo '✅✅✅✅ Success,everything's good!... I am committing this now. ✅✅✅✅'
+echo '✅✅✅✅ Success,everything looks good!... I am committing this now. ✅✅✅✅'

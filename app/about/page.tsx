@@ -26,29 +26,29 @@ function About() {
         {/* text  */}
         <div className="flex flex-col justify-center gap-y-6 mt-8 text-md text-zinc-400 font-light">
           <p>
-            I'm a fullstack developer who loves building minimal, modern and
-            beautiful websites, mobile apps, and user interfaces.
+            I&apos;m a fullstack developer who loves building minimal, modern
+            and beautiful websites, mobile apps, and user interfaces.
             <span className="text-[#FE9FA1]">
               I personally like to work in the intersection product &
               engineering
             </span>
             . I enjoy working on React and all things
             <span className="text-[#FE9FA1]"> JavaScript & TypeScript</span>.
-            Lately I've been interested in learning{" "}
+            Lately I&apos;ve been interested in learning{" "}
             <span className="text-[#FE9FA1]"> ios development </span>. In the
-            past I've also worked with different languages like Python,
+            past I&apos;ve also worked with different languages like Python,
             Java,JavaScript,TypeScript and C++, including Node, Django and
             Redux.
           </p>
 
           <p>
-            I'm currently a third year student at{" "}
+            I&apos;m currently a third year student at{" "}
             <u className="text-[#FE9FA1]">
               <a href="https://manipal.edu/mit.html" target="_blank">
                 MIT Manipal
               </a>
             </u>
-            , pursuing a Bachelor's in Data Science.
+            , pursuing a Bachelor&apos;s in Data Science.
           </p>
 
           <p>
@@ -78,16 +78,16 @@ function About() {
         <h2 className="text-white text-3xl font-semibold">Work Experience</h2>
 
         <p className="text-md text-zinc-500">
-          I'm a fullstack developer who loves building minimal, modern and
+          I&apos;m a fullstack developer who loves building minimal, modern and
           beautiful websites, mobile apps, and user interfaces.
           <span className="text-[#FE9FA1]">
             I personally like to work in the intersection product & engineering
           </span>
           . I enjoy working on React and all things
           <span className="text-[#FE9FA1]"> JavaScript & TypeScript</span>.
-          Lately I've been interested in learning{" "}
+          Lately I&apos;ve been interested in learning{" "}
           <span className="text-[#FE9FA1]"> ios development </span>. In the past
-          I've also worked with different languages like Python,
+          I&apos;ve also worked with different languages like Python,
           Java,JavaScript,TypeScript and C++, including Node, Django and Redux.
         </p>
       </div>

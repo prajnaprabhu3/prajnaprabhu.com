@@ -45,7 +45,7 @@ const social = [
 // console.log(contactLinks.linkedin);
 
 function Navbar() {
-  let [activeTab, setActiveTab] = useState(tabs[0].id);
+  const [activeTab, setActiveTab] = useState(tabs[0].id);
   return (
     <div className="top-8 sticky z-10 md:top-6 flex justify-around space-x-10 items-center">
       {/* logo  */}

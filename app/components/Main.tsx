@@ -8,7 +8,7 @@ function Main() {
       {/* short about me  */}
       <div className="text-sm flex w-ful py-6 px-4 flex-col justify-center gap-y-10 lg:w-2/3 md:text-md text-zinc-400 mainText ">
         <p>
-          I'm a fullstack developer who loves building minimal, modern and
+          I&apos;m a fullstack developer who loves building minimal, modern and
           beautiful websites, mobile apps, and user interfaces.
           <span className="text-[#FE9FA1]">
             I personally like to work in the intersection of product &
@@ -17,13 +17,13 @@ function Main() {
         </p>
 
         <p>
-          I'm currently a third year student at{" "}
+          I&apos; currently a third year student at{" "}
           <u className="text-[#FE9FA1]">
             <a href="https://manipal.edu/mit.html" target="_blank">
               MIT Manipal
             </a>
           </u>
-          , pursuing a Bachelor's in Data Science.
+          , pursuing a Bachelor&apos; in Data Science.
         </p>
 
         <p>
