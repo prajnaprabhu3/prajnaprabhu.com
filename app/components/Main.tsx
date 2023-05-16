@@ -19,7 +19,9 @@ function Main() {
         <p>
           I'm currently a third year student at{" "}
           <u className="text-[#FE9FA1]">
-            <a href="https://manipal.edu/mit.html">MIT Manipal</a>
+            <a href="https://manipal.edu/mit.html" target="_blank">
+              MIT Manipal
+            </a>
           </u>
           , pursuing a Bachelor's in Data Science.
         </p>

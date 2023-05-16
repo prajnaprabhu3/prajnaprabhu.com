@@ -71,7 +71,7 @@ function Footer() {
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
               className={`${
-                activeTab === tab.id ? "text-red-300" : "hover:text-[#FE9FA1]"
+                activeTab === tab.id ? "text-rose-300" : "hover:text-[#FE9FA1]"
               } relative rounded-full px-4 py-1 text-sm font-lighter text-white  transition focus-visible:outline-2`}
               style={{
                 WebkitTapHighlightColor: "transparent",
@@ -91,7 +91,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="hidden md:flex lg:flex justify-center text-sm py-4 font-normal text-zinc-600 border-t border-zinc-800">
+      <div className="hidden md:flex lg:flex z-10 bg-[#141516] justify-center text-sm py-4 font-normal text-zinc-600 border-t border-zinc-800">
         <p>© Prajna Prabhu 2023. No cookies here 🍪 </p>
       </div>
     </>
