@@ -1,0 +1,4 @@
+- [x] Favicon fix
+- [ ] Add work experience
+- [ ] Make about page responsive
+- [ ] Get works page completed
