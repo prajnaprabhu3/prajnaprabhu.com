@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 import { FiMail, FiGithub, FiTwitter, FiLinkedin } from "react-icons/fi";
 
 //data
-import { contactLinks } from "@/data/contact";
+import { contactLinks } from "@/../data/contact";
 
 const tabs = [
   { id: "home", label: "Home", path: "/" },
@@ -63,7 +63,7 @@ function Navbar() {
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
             className={`${
-              activeTab === tab.id ? "text-rose-300" : "hover:text-[#FE9FA1]"
+              activeTab === tab.id ? "text-red-300" : "hover:text-[#FE9FA1]"
             } relative rounded-full px-4 py-1 text-sm font-lighter text-white  transition focus-visible:outline-2`}
             style={{
               WebkitTapHighlightColor: "transparent",

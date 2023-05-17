@@ -1,4 +1,0 @@
-- [] Add kmenu
-- [] Get done with about page
-- [] fix favicon stuff
-- [x] footer

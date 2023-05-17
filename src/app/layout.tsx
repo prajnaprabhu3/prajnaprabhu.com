@@ -1,5 +1,5 @@
 import "./globals.css";
-import { metadataInfo } from "../data/metadata";
+import { metadataInfo } from "../../data/metadata";
 import Navbar from "./components/navbar";
 import Footer from "@/app/components/footer";
 
