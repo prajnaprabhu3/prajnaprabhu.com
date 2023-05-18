@@ -1,10 +1,11 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Experience from "../components/experience";
 
 function About() {
   return (
-    <div className="flex flex-col w-1/2 mx-auto px-4 mt-10 pt-10">
+    <div className="flex flex-col gap-y-36 w-1/2 mx-auto px-4 mt-10 pt-10">
       <div className="">
         {/* image  */}
         <div className="flex w-1/2 h-16 justify-between items-center">
@@ -74,22 +75,9 @@ function About() {
       </div>
 
       {/* work  */}
-      <div className="h-96 mt-10 py-20">
-        <h2 className="text-white text-3xl font-semibold">Work Experience</h2>
-
-        <p className="text-md text-zinc-500">
-          I&apos;m a fullstack developer who loves building minimal, modern and
-          beautiful websites, mobile apps, and user interfaces.
-          <span className="text-[#FE9FA1]">
-            I personally like to work in the intersection product & engineering
-          </span>
-          . I enjoy working on React and all things
-          <span className="text-[#FE9FA1]"> JavaScript & TypeScript</span>.
-          Lately I&apos;ve been interested in learning{" "}
-          <span className="text-[#FE9FA1]"> ios development </span>. In the past
-          I&apos;ve also worked with different languages like Python,
-          Java,JavaScript,TypeScript and C++, including Node, Django and Redux.
-        </p>
+      <div>
+        <h2 className="text-2xl font-semibold">Work Experience</h2>
+        <Experience />
       </div>
 
       {/* work done  */}

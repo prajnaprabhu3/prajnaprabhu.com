@@ -1,4 +1,12 @@
+- [x] setup husky
+- [x] bottom nav for mobile
 - [x] Favicon fix
 - [ ] Add work experience
 - [ ] Make about page responsive
 - [ ] Get works page completed
+- [ ] Setup layout for blog page
+- [ ] Include a dummy blog for now
+- [ ] Books page
+  - [ ] should have the **garden** notion link somewhere
+  - [ ] plan how the book layout should be
+- [ ] add kmenu utility
