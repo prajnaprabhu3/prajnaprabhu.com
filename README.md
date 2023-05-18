@@ -1,7 +1,7 @@
 - [x] setup husky
 - [x] bottom nav for mobile
 - [x] Favicon fix
-- [ ] Add work experience
+- [x] Add work experience
 - [ ] Make about page responsive
 - [ ] Get works page completed
 - [ ] Setup layout for blog page

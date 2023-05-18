@@ -5,7 +5,7 @@ import Experience from "../components/experience";
 
 function About() {
   return (
-    <div className="flex flex-col gap-y-36 w-1/2 mx-auto px-4 mt-10 pt-10">
+    <div className="flex flex-col gap-y-28 w-1/2 mx-auto px-4 mt-10 pt-10">
       <div className="">
         {/* image  */}
         <div className="flex w-1/2 h-16 justify-between items-center">
@@ -75,7 +75,7 @@ function About() {
       </div>
 
       {/* work  */}
-      <div>
+      <div className="pb-20">
         <h2 className="text-2xl font-semibold">Work Experience</h2>
         <Experience />
       </div>

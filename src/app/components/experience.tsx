@@ -11,8 +11,8 @@ import { company } from "@/../data/experience";
 function Experience() {
   const [activeCompany, setActiveCompany] = useState("Linear");
   return (
-    <div>
-      <div className="flex items-center gap-x-10 py-10">
+    <div className="py-14">
+      <div className="flex  gap-x-10">
         {/* company button  */}
         <div className="flex flex-col">
           {company.map((company, id) => (
@@ -37,7 +37,9 @@ function Experience() {
               activeCompany === company.title && (
                 <div key={id} className="flex flex-col  gap-y-3">
                   <div>
-                    <h2 className="font-semibold">{company.designation}</h2>
+                    <h2 className="font-semibold text-lg">
+                      {company.designation}
+                    </h2>
                     <p className="text-sm text-zinc-500 py-1">
                       {company.timeline}
                     </p>
