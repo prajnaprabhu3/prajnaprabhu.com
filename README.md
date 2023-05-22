@@ -2,7 +2,7 @@
 - [x] bottom nav for mobile
 - [x] Favicon fix
 - [x] Add work experience
-- [ ] Make about page responsive
+- [x] Make about page responsive
 - [ ] Get works page completed
 - [ ] Setup layout for blog page
 - [ ] Include a dummy blog for now
