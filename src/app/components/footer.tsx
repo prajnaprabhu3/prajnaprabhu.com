@@ -17,7 +17,7 @@ function Footer() {
   const [activeTab, setActiveTab] = useState(tabs[0].id);
   return (
     <>
-      <div className="md:hidden lg:hidden sticky z-10 mb-4 flex justify-around space-x-10 items-center">
+      <div className=" md:hidden lg:hidden sticky z-10 mb-4 flex justify-around md:space-x-10 items-center">
         {/* navigation */}
         <div className="sticky bottom-0 flex space-x-1.5 w-96 rounded-full py-1.5 px-2 border-2 border-zinc-800 drop-shadow-lg backdrop-filter backdrop-blur-lg bg-opacity-30">
           {tabs.map((tab) => (
@@ -25,7 +25,7 @@ function Footer() {
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
               className={`${
-                activeTab === tab.id ? "text-red-300" : "hover:text-[#FE9FA1]"
+                activeTab === tab.id ? "text-rose-300" : "hover:text-[#FE9FA1]"
               } relative rounded-full px-4 py-1 text-sm font-lighter text-white  transition focus-visible:outline-2`}
               style={{
                 WebkitTapHighlightColor: "transparent",
@@ -45,7 +45,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="hidden md:flex lg:flex z-10 bg-[#141516] justify-center text-sm py-4 font-normal text-zinc-600 border-t border-zinc-800">
+      <div className="hidden md:flex lg:flex justify-center text-sm py-4 font-normal text-zinc-600 border-t border-zinc-800">
         <p>© Prajna Prabhu 2023. No cookies here 🍪 </p>
       </div>
     </>

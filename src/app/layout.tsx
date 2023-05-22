@@ -20,7 +20,7 @@ export default function RootLayout({
       >
         <Navbar />
 
-        <div className="flex mx-auto justify-around items-center ">
+        <div className="flex mx-auto justify-around items-center">
           {children}
         </div>
 

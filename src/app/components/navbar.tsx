@@ -47,7 +47,7 @@ const social = [
 function Navbar() {
   const [activeTab, setActiveTab] = useState(tabs[0].id);
   return (
-    <div className="top-8 sticky z-10 md:top-6 flex justify-around space-x-10 items-center">
+    <div className="pt-10 md:sticky md:pt-0 z-10 md:top-6 flex justify-around space-x-10 items-center">
       {/* logo  */}
       <Link href="/">
         <div className="flex justify-center text-xl items-center">
@@ -63,7 +63,7 @@ function Navbar() {
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
             className={`${
-              activeTab === tab.id ? "text-red-400" : "hover:text-[#FE9FA1]"
+              activeTab === tab.id ? "text-rose-300" : "hover:text-[#FE9FA1]"
             } relative rounded-full px-4 py-1 text-sm font-lighter text-white  transition focus-visible:outline-2`}
             style={{
               WebkitTapHighlightColor: "transparent",

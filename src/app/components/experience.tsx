@@ -12,9 +12,9 @@ function Experience() {
   const [activeCompany, setActiveCompany] = useState("Linear");
   return (
     <div className="py-14">
-      <div className="flex  gap-x-10">
+      <div className="flex-col justify-center items-center  md:flex-row flex md:items-start md:justify-start  gap-x-10">
         {/* company button  */}
-        <div className="flex flex-col">
+        <div className="flex-row text-sm md:flex-col md:text-lg flex">
           {company.map((company, id) => (
             <button
               key={id}
@@ -31,7 +31,7 @@ function Experience() {
         </div>
 
         {/* company details  */}
-        <div>
+        <div className="mt-4 w-full  md:mt-2  lg:mt-0">
           {company.map(
             (company, id) =>
               activeCompany === company.title && (
@@ -61,27 +61,6 @@ function Experience() {
                 </div>
               )
           )}
-          {/* {company.map(
-            (company) =>
-              activeCompany === company.title && (
-                <div
-                  key={company.id}
-                  className="flex flex-col lg:flex-row   mt-4 md:mt-6"
-                >
-                  <p className="text-[#565353] mx-2 lg:my-auto md:mx-8 text-base md:text-xl">
-                    {company.details}
-                  </p>
-                  <div
-                    className={`rounded-md my-4 md:my-6 ${
-                      activeCompany === "Blockchain"
-                        ? "h-20 md:h-24"
-                        : "h-10 md:h-12"
-                    }`}
-                    id={company.style_id}
-                  ></div>
-                </div>
-              )
-          )} */}
         </div>
       </div>
     </div>

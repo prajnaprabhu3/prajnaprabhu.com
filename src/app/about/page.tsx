@@ -5,10 +5,10 @@ import Experience from "../components/experience";
 
 function About() {
   return (
-    <div className="flex flex-col gap-y-28 w-1/2 mx-auto px-4 mt-10 pt-10">
+    <div className="w-full px-4 flex flex-col gap-y-28 md:w-1/2 mx-auto md:px-4 mt-10 pt-10">
       <div className="">
         {/* image  */}
-        <div className="flex w-1/2 h-16 justify-between items-center">
+        <div className="w-2/3 gap-x-4 flex md:w-1/2 h-16  items-center">
           <Image
             alt="prajna"
             height="60"
@@ -17,7 +17,7 @@ function About() {
             className="rounded-lg p-0.5 border-2 border-zinc-800"
           />
 
-          <div className="text-gray-200 text-lg font-light">
+          <div className="text-base text-gray-200 md:text-lg font-light ">
             <p>Prajna Prabhu</p>
             <p className="text-md text-zinc-500">
               Fullstack developer based in India
@@ -25,7 +25,7 @@ function About() {
           </div>
         </div>
         {/* text  */}
-        <div className="flex flex-col justify-center gap-y-6 mt-8 text-md text-zinc-400 font-light">
+        <div className="text-sm flex flex-col justify-center gap-y-6 mt-8 md:text-base text-zinc-400 font-light">
           <p>
             I&apos;m a fullstack developer who loves building minimal, modern
             and beautiful websites, mobile apps, and user interfaces.
@@ -36,10 +36,11 @@ function About() {
             . I enjoy working on React and all things
             <span className="text-[#FE9FA1]"> JavaScript & TypeScript</span>.
             Lately I&apos;ve been interested in learning{" "}
-            <span className="text-[#FE9FA1]"> ios development </span>. In the
+            <span className="text-[#FE9FA1]"> ios development </span>.
+            {/* In the
             past I&apos;ve also worked with different languages like Python,
             Java,JavaScript,TypeScript and C++, including Node, Django and
-            Redux.
+            Redux. */}
           </p>
 
           <p>
@@ -76,7 +77,7 @@ function About() {
 
       {/* work  */}
       <div className="pb-20">
-        <h2 className="text-2xl font-semibold">Work Experience</h2>
+        <h2 className="text-xl md:text-2xl font-semibold">Work Experience</h2>
         <Experience />
       </div>
 
