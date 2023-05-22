@@ -19,14 +19,14 @@ function Footer() {
     <>
       <div className="spcae-z-2 pt-10 z-100 sticky bottom-4 md:hidden lg:hidden  mb-4 flex justify-around md:space-x-10 items-center">
         {/* navigation */}
-        <div className="sticky bottom-0  z-100flex space-x-1.5 w-96 rounded-full py-1.5 px-2 border-2 border-zinc-800 drop-shadow-lg backdrop-filter backdrop-blur-lg bg-opacity-30">
+        <div className=" sticky bottom-0  z-100 flex space-x-1 w-78 rounded-full py-1.5 px-1 border-2 border-zinc-800 drop-shadow-lg backdrop-filter backdrop-blur-lg bg-opacity-30">
           {tabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
               className={`${
                 activeTab === tab.id ? "text-rose-300" : "hover:text-[#FE9FA1]"
-              } relative rounded-full px-4 py-1 text-sm font-lighter text-white  transition focus-visible:outline-2`}
+              } text-xs relative rounded-full px-4 py-1  font-lighter text-white  transition focus-visible:outline-2`}
               style={{
                 WebkitTapHighlightColor: "transparent",
               }}
