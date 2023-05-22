@@ -4,7 +4,7 @@ import React from "react";
 
 function Main() {
   return (
-    <div className="flex-col-reverse px-2 mt-14 lg:mt-0 lg:flex-row lg-flex-row flex justify-center items-center md:px-48  overflow-y-hidden">
+    <div className="flex-col-reverse px-2 mt-14 lg:mt-0 lg:flex-row lg-flex-row flex justify-center items-center md:px-48  overflow-x-auto">
       {/* short about me  */}
       <div className="text-sm flex w-ful py-6 px-4 flex-col justify-center gap-y-10 lg:w-2/3 md:text-md text-zinc-400 mainText ">
         <p>

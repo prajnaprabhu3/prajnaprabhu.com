@@ -17,7 +17,7 @@ function Footer() {
   const [activeTab, setActiveTab] = useState(tabs[0].id);
   return (
     <>
-      <div className="spcae-z-2 pt-10 z-100 sticky bottom-4 md:hidden lg:hidden  mb-4 flex justify-around md:space-x-10 items-center">
+      <div className="spcae-z-2 pt-10 z-100 sticky bottom-4 md:hidden lg:hidden  mb-4 flex justify-around md:space-x-10 items-center overflow-x-auto">
         {/* navigation */}
         <div className=" sticky bottom-0  z-100 flex space-x-1 w-78 rounded-full py-1.5 px-1 border-2 border-zinc-800 drop-shadow-lg backdrop-filter backdrop-blur-lg bg-opacity-30">
           {tabs.map((tab) => (
@@ -45,7 +45,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="hidden md:flex lg:flex z-10 bg-[#141516] justify-center text-sm py-4 font-normal text-zinc-600 border-t md:border-zinc-800">
+      <div className="hidden h-12 md:flex lg:flex z-10 bg-[#141516] justify-center text-sm py-4 font-normal text-zinc-600 border-t md:border-zinc-800">
         <p>© Prajna Prabhu 2023. No cookies here 🍪 </p>
       </div>
     </>

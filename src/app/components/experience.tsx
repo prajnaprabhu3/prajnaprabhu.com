@@ -9,9 +9,9 @@ import { MdPlayArrow } from "react-icons/md";
 import { company } from "@/../data/experience";
 
 function Experience() {
-  const [activeCompany, setActiveCompany] = useState("Linear");
+  const [activeCompany, setActiveCompany] = useState("ABC");
   return (
-    <div className="py-14">
+    <div className="pt-10">
       <div className="flex-col justify-center items-center  md:flex-row flex md:items-start md:justify-start  gap-x-10">
         {/* company button  */}
         <div className="flex-row text-sm md:flex-col md:text-lg flex">
