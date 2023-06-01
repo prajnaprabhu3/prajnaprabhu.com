@@ -19,7 +19,7 @@ function Experience() {
             <button
               key={id}
               onClick={() => setActiveCompany(company.title)}
-              className={`py-2 px-10 text-md font-medium rounded-r-md border-l-2 ${
+              className={`py-2 px-10 text-md font-medium md:rounded-r-md border-l-2 ${
                 activeCompany == company.title
                   ? "bg-[#292A2C] border-[#FE9FA1]"
                   : "bg-[#141516] border-[#3F3F3F]"
@@ -31,7 +31,7 @@ function Experience() {
         </div>
 
         {/* company details  */}
-        <div className="mt-4 w-full  md:mt-2  lg:mt-0">
+        <div className="mt-8 w-full  md:mt-2  lg:mt-0">
           {company.map(
             (company, id) =>
               activeCompany === company.title && (

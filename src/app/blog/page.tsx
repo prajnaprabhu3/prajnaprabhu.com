@@ -1,7 +1,7 @@
 import React from "react";
 
 function Blog() {
-  return <div>Coming soon</div>;
+  return <div className="flex flex-col mx-auto">Coming soon</div>;
 }
 
 export default Blog;

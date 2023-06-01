@@ -5,7 +5,7 @@ import Experience from "../components/experience";
 
 function About() {
   return (
-    <div className="pt-96 mt-36 w-full gap-y-20 px-4 flex flex-col md:gap-y-28 md:w-1/2 mx-auto md:px-4 md:mt-20 md:pt-20 overflow-x-auto">
+    <div className="w-full z-8 gap-y-20 px-4 flex flex-col md:gap-y-28 md:w-1/2 mx-auto md:px-4 mt-10 md:mt-2 md:pt-20 ">
       <div className="">
         {/* image  */}
         <div className="w-2/3 gap-x-4 flex md:w-1/2 h-16  items-center">
@@ -19,18 +19,18 @@ function About() {
 
           <div className="text-base text-gray-200 md:text-lg font-light ">
             <p>Prajna Prabhu</p>
-            <p className="text-md text-zinc-500">
+            <p className="text-xs md:text-base text-zinc-500">
               Fullstack developer based in India
             </p>
           </div>
         </div>
         {/* text  */}
-        <div className="text-sm flex flex-col justify-center gap-y-6 mt-8 md:text-base text-zinc-400 font-light">
+        <div className="text-sm flex flex-col justify-center items-start gap-y-6 mt-8 md:text-base text-zinc-400 font-light">
           <p>
             I&apos;m a fullstack developer who loves building minimal, modern
             and beautiful websites, mobile apps, and user interfaces.
             <span className="text-[#FE9FA1]">
-              I personally like to work in the intersection product &
+              {""} I personally like to work in the intersection product &
               engineering
             </span>
             . I enjoy working on React and all things
@@ -56,9 +56,8 @@ function About() {
           <p>
             Apart from all the nerdy and geeky things, I enjoy playing guitar,
             play basketball and reading books. My library mostly has books
-            around topics like{" "}
+            around topics like <span className="text-[#FE9FA1]">startup</span>,{" "}
             <span className="text-[#FE9FA1]">entrepreneurship</span> ,{" "}
-            <span className="text-[#FE9FA1]">startup</span> startup,{" "}
             <span className="text-[#FE9FA1]">self-help</span> and{" "}
             <span className="text-[#FE9FA1]">investment</span>. Can find a few{" "}
             <span className="text-[#FE9FA1]">fiction</span> Ig. If you are
@@ -76,7 +75,7 @@ function About() {
       </div>
 
       {/* work  */}
-      <div className="pb-20">
+      <div className="pb-8">
         <h2 className="text-xl md:text-2xl font-semibold">Work Experience</h2>
         <Experience />
       </div>

@@ -47,7 +47,7 @@ const social = [
 function Navbar() {
   const [activeTab, setActiveTab] = useState(tabs[0].id);
   return (
-    <div className="pt-10 md:sticky md:pt-0 z-10 md:top-6 flex justify-around space-x-10 items-center">
+    <div className="mt-6 md:mt-2 sticky h-10 md:z-10 md:top-6 flex justify-around space-x-10 items-center">
       {/* logo  */}
       <Link href="/">
         <div className="flex justify-center text-xl items-center">
@@ -64,7 +64,7 @@ function Navbar() {
             onClick={() => setActiveTab(tab.id)}
             className={`${
               activeTab === tab.id ? "text-rose-300" : "hover:text-[#FE9FA1]"
-            } relative rounded-full px-4 py-1 text-sm font-lighter text-white  transition focus-visible:outline-2`}
+            } relative rounded-full px-4 py-1 text-sm font-lighter text-zinc-350  transition focus-visible:outline-2`}
             style={{
               WebkitTapHighlightColor: "transparent",
             }}
@@ -72,7 +72,7 @@ function Navbar() {
             {activeTab === tab.id && (
               <motion.span
                 layoutId="bubble"
-                className="absolute inset-0 -z-20 bg-[#262626] "
+                className="absolute inset-0 -z-20 bg-[#262626] py-2 "
                 style={{ borderRadius: 9999 }}
                 transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
               />
@@ -89,7 +89,7 @@ function Navbar() {
             href={item.href}
             target="_blank"
             key={id}
-            className="hover:text-[#FE9FA1] delay-75 hover:font-bold hover:scale-125 transition-transform duration-100 ease-out"
+            className="hover:text-[#FE9FA1] delay-75 hover:font-bold hover:scale-105 transition-transform duration-150 ease-out"
           >
             {item.logo}
           </a>

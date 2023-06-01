@@ -17,7 +17,7 @@ function Footer() {
   const [activeTab, setActiveTab] = useState(tabs[0].id);
   return (
     <>
-      <div className="spcae-z-2 pt-10 z-100 sticky bottom-4 md:hidden lg:hidden  mb-4 flex justify-around md:space-x-10 items-center overflow-x-auto">
+      <div className="space-z-2 pt-10 z-100 sticky bottom-2 md:hidden lg:hidden flex justify-around md:space-x-10 items-center">
         {/* navigation */}
         <div className=" sticky bottom-0  z-100 flex space-x-1 w-78 rounded-full py-1.5 px-1 border-2 border-zinc-800 drop-shadow-lg backdrop-filter backdrop-blur-lg bg-opacity-30">
           {tabs.map((tab) => (
@@ -26,7 +26,7 @@ function Footer() {
               onClick={() => setActiveTab(tab.id)}
               className={`${
                 activeTab === tab.id ? "text-rose-300" : "hover:text-[#FE9FA1]"
-              } text-xs relative rounded-full px-4 py-1  font-lighter text-white  transition focus-visible:outline-2`}
+              } text-sm relative rounded-full px-4 py-1.5  font-lighter text-zinc-350  transition focus-visible:outline-2`}
               style={{
                 WebkitTapHighlightColor: "transparent",
               }}

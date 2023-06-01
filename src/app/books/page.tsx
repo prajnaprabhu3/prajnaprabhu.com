@@ -3,7 +3,7 @@ import Garden from "../components/garden";
 
 function books() {
   return (
-    <div className="mt-30 text-white">
+    <div className="flex flex-col mx-auto mt-30 text-white">
       <Garden />
     </div>
   );
