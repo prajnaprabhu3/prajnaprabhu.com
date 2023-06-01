@@ -3,8 +3,8 @@ import { metadataInfo } from "../../data/metadata";
 import Navbar from "./components/navbar";
 import Footer from "@/app/components/footer";
 // import { local } from "../../public/fonts/";
-// import { Outfit } from "next/font/google";
-import { Inter, Outfit } from "next/font/google";
+// import { Inter} from "next/font/google";
+import { Outfit } from "next/font/google";
 
 export const metadata = {
   title: `${metadataInfo.title}`,
