@@ -14,7 +14,6 @@ export const metadata = {
 const outfit = Outfit({
   subsets: ["latin"],
   weight: ["300"],
-  // variable: "--font-outfit",
 });
 
 export default function RootLayout({
@@ -28,16 +27,8 @@ export default function RootLayout({
         className={`${outfit.className} bg-[#141516] h-screen flex flex-col justify-between text-gray-300`}
       >
         <Navbar />
-
-        {/* <div
-          className={`${outfit.className} flex mx-auto justify-around items-center overflow-x-auto`}
-        > */}
         {children}
-        {/* </div> */}
-
-        {/* <div className="sticky bottom-0"> */}
         <Footer />
-        {/* </div> */}
       </body>
     </html>
   );
