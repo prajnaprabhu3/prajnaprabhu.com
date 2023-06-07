@@ -21,7 +21,7 @@ function Experience() {
               onClick={() => setActiveCompany(company.title)}
               className={`py-2 px-10 text-md font-medium md:rounded-r-md border-l-2 ${
                 activeCompany == company.title
-                  ? "bg-[#292A2C] border-[#FE9FA1]"
+                  ? "bg-[#292A2C] border-myColor"
                   : "bg-[#141516] border-[#3F3F3F]"
               }`}
             >

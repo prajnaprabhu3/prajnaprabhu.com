@@ -50,9 +50,9 @@ function Navbar() {
     <div className="mt-6 md:mt-2 sticky h-10 md:z-10 md:top-6 flex justify-around space-x-10 items-center">
       {/* logo  */}
       <Link href="/">
-        <div className="flex justify-center text-xl items-center">
+        <div className="flex justify-center text-xl items-end">
           <p>prajna</p>
-          <span className="text-3xl text-[#FE9FA1]">.</span>
+          <span className="text-3xl text-myColor">.</span>
         </div>
       </Link>
 
@@ -63,7 +63,7 @@ function Navbar() {
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
             className={`${
-              activeTab === tab.id ? "text-rose-300" : "hover:text-[#FE9FA1]"
+              activeTab === tab.id ? "text-myColor" : "hover:text-myColor"
             } relative rounded-full px-4 py-1 text-sm font-lighter text-zinc-350  transition focus-visible:outline-2`}
             style={{
               WebkitTapHighlightColor: "transparent",
@@ -89,7 +89,7 @@ function Navbar() {
             href={item.href}
             target="_blank"
             key={id}
-            className="hover:text-[#FE9FA1] delay-75 hover:font-bold hover:scale-105 transition-transform duration-150 ease-out"
+            className="hover:text-myColor delay-75 hover:font-bold hover:scale-105 transition-transform duration-150 ease-out"
           >
             {item.logo}
           </a>
