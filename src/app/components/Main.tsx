@@ -21,7 +21,7 @@ function Main() {
         </p>
 
         <p>
-          I&apos; currently a third year student at{" "}
+          I&apos;m currently a third year student at{" "}
           <u className="text-myColor">
             <a href="https://manipal.edu/mit.html" target="_blank">
               MIT Manipal
@@ -37,7 +37,7 @@ function Main() {
             <Link href="/books">here</Link>
           </u>
           .If you are someone in my circle and want to read any of my
-          collection, drop me a text via WhatsApp.
+          collection, feel free to drop me a text.
         </p>
       </div>
 
