@@ -3,6 +3,7 @@
 - [x] Favicon fix
 - [x] Add work experience
 - [x] Make about page responsive
+- [x] Gallery section in Home
 - [ ] Get works page completed
 - [ ] Setup layout for blog page
 - [ ] Include a dummy blog for now
