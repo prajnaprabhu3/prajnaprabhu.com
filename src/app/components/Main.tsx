@@ -51,7 +51,7 @@ function Main() {
           height="300"
           width="320"
           src="/images/me.png"
-          className="rounded-sm w-48 lg:w-80 mx-20"
+          className="rounded-md w-48 lg:w-80 mx-20"
         />
       </div>
 
