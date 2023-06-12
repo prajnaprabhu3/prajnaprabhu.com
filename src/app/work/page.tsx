@@ -4,8 +4,8 @@ import ProjectCard from "../components/projectCard";
 
 function Work() {
   return (
-    <div className="flex flex-col justify-center mt-14 pt-14 mx-auto p-20 mb-10">
-      <h2 className="font-semibold text-3xl ml-10 pl-16 pb-10">
+    <div className="px-4 flex flex-col justify-center md:mt-14 pt-14 mx-auto md:p-20 mb-10">
+      <h2 className="text-xl font-semibold md:text-3xl md:ml-10 md:pl-16 pb-10 b">
         Some of my work
       </h2>
 
