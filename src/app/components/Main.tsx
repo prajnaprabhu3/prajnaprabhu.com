@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import Gallery from "./gallery";
+// import Gallery from "./gallery";
+import New from "./new";
 
 function Main() {
   return (
@@ -46,16 +47,20 @@ function Main() {
         </div>
 
         {/* image  */}
+        {/* <div className="flex flex-col items-center gap-y-2"> */}
         <Image
           alt="me"
           height="300"
           width="320"
-          src="/images/me.png"
-          className="rounded-4xl w-48 lg:w-80 mx-20"
+          src="/images/c.jpeg"
+          className="rounded-3xl w-52 h-60 lg:h-80 lg:w-64 mx-20 object-cover"
         />
+        {/* <p className="text-zinc-500">yes that&apos;s me :)</p> */}
+        {/* </div> */}
       </div>
 
-      <Gallery />
+      {/* <Gallery /> */}
+      <New />
     </div>
   );
 }
