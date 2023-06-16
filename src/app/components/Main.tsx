@@ -8,7 +8,7 @@ import New from "./new";
 function Main() {
   return (
     <div>
-      <div className="flex-col-reverse px-2 mt-14 lg:mt-0 lg:flex-row lg-flex-row flex justify-center items-center md:px-48  overflow-x-auto">
+      <div className="flex-col-reverse px-2 mt-14 lg:mt-0 lg:flex-row lg-flex-row flex justify-center items-center md:px-48">
         {/* short about me  */}
         <div className="text-sm leading-6 flex w-ful py-6 px-4 flex-col justify-center gap-y-10 lg:w-2/3 md:text-md text-zinc-400 mainText ">
           <h2 className="flex justify-center md:justify-start text-lg font-semibold">
@@ -20,7 +20,7 @@ function Main() {
             I&apos;m a fullstack developer who loves building minimal, modern
             and beautiful websites, mobile apps, and user interfaces.
             <span className="text-myColor">
-              {""} I personally like to work in the intersection of product &
+              I personally like to work in the intersection of product &
               engineering.
             </span>
           </p>
@@ -41,7 +41,7 @@ function Main() {
             <u className="text-myColor">
               <Link href="/books">here</Link>
             </u>
-            .If you are someone in my circle and want to read any of my
+            . If you are someone in my circle and want to read any of my
             collection, feel free to drop me a text.
           </p>
         </div>

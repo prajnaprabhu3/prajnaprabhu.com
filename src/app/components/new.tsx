@@ -16,7 +16,7 @@ const New = () => {
             className="relative aspect-[9/10] w-44 flex-none snap-center overflow-hidden rounded-xl sm:w-72 sm:rounded-2xl"
           >
             <div className="absolute bottom-0 z-10 w-full rounded-xl bg-gradient-to-t from-black px-5 py-3">
-              <h2 className="text-md mt-4 md:text-xl font-bold text-white">
+              <h2 className="text-sm mt-4 md:text-xl font-bold text-white">
                 {image.place}
               </h2>
               <p className="text-xs md:text-sm text-white/50">{image.tag}</p>
