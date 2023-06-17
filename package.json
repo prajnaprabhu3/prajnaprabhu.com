@@ -22,7 +22,6 @@
     "autoprefixer": "10.4.14",
     "eslint-config-next": "13.4.1",
     "framer-motion": "^10.12.10",
-    "kbar": "0.1.0-beta.40",
     "kmenu": "1.3.0-beta",
     "next": "13.4.1",
     "popmotion": "^11.0.5",

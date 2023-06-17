@@ -227,6 +227,8 @@ const Palette: FC = () => {
     setTimeout(() => setAwaiting(false), 1000);
   });
 
+  // include these dependency when nested [open, setOpen]
+
   return (
     <CommandWrapper>
       <CommandMenu
