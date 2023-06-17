@@ -1,24 +1,25 @@
-"use client";
-
-import Image from "next/image";
-import Link from "next/link";
-// import Gallery from "./gallery";
-import New from "./new";
 import { FiCommand } from "react-icons/fi";
 import { useKmenu } from "kmenu";
+import Link from "next/link";
+import New from "./new";
+
+import BlurImage from "./blurImage";
 
 function Main() {
   const { toggle } = useKmenu();
+
   return (
     <div>
-      <div className="flex-col-reverse px-2 mt-14 lg:mt-0 lg:flex-row lg-flex-row flex justify-center items-center md:px-48">
+      <div className="flex-col-reverse px-2 mt-14 lg:flex-col-reverse lg:mt-0 xl:flex-row  flex justify-center items-center md:px-48 2xl:w-3/4 mx-auto">
         {/* short about me  */}
-        <div className="text-sm leading-6 flex w-ful py-6 px-4 flex-col justify-center gap-y-10 lg:w-2/3 md:text-md text-zinc-400 mainText ">
-          <div className="flex-none md:flex md:gap-96">
+        <div className="text-sm  leading-6 flex w-ful py-6 px-4 md:px-8 flex-col justify-center gap-y-10 lg:w-2/3 md:text-md text-zinc-400 mainText ">
+          <div className="flex-none md:flex justify-between md:pr-12">
+            {/* <div className="flex-none md:flex md:gap-96"> */}
             <h2 className="flex justify-center md:justify-start text-lg font-semibold">
-              👋🏻 hi, I&apos;m
+              <p> 👋🏻 hi, I&apos;m</p>
               <span className="text-myColor pl-2"> Prajna,</span>
             </h2>
+
             <button
               className="hidden md:flex items-center hover:bg-zinc-800 px-2 rounded hover:scale-105 transition-transform duration-300"
               onClick={toggle}
@@ -58,19 +59,26 @@ function Main() {
         </div>
 
         {/* image  */}
-        {/* <div className="flex flex-col items-center gap-y-2"> */}
-        <Image
-          alt="me"
-          height="300"
-          width="320"
-          src="/images/c.jpeg"
-          className="rounded-3xl w-52 h-60 lg:h-80 lg:w-64 mx-20 object-cover"
-        />
+
+        {/* <div className="">
+          <Image
+            alt="me"
+            height="300"
+            width="320"
+            src="/images/c.jpeg"
+            // objectFit="cover"
+            // layout="fill"
+            className={`rounded-3xl w-52 h-60 lg:h-80 lg:w-64 mx-20 object-cover
+           duration-500 
+              ${isLoading ? " blur-lg grayscale" : " blur-0 grayscale-0"})`}
+            onLoadingComplete={() => setLoading(false)}
+          />
+        </div> */}
         {/* <p className="text-zinc-500">yes that&apos;s me :)</p> */}
-        {/* </div> */}
+
+        <BlurImage image="/images/c.jpeg" />
       </div>
 
-      {/* <Gallery /> */}
       <New />
     </div>
   );

@@ -4,10 +4,12 @@
 - [x] Add work experience
 - [x] Make about page responsive
 - [x] Gallery section in Home
-- [ ] Get works page completed
+- [x] Get works page completed
 - [ ] Setup layout for blog page
 - [ ] Include a dummy blog for now
 - [ ] Books page
   - [x] should have the **garden** notion link somewhere
   - [ ] plan how the book layout should be
-- [ ] add kmenu utility
+- [x] add kmenu utility
+- [ ] guestbook page
+- [ ] lazy loading for images
