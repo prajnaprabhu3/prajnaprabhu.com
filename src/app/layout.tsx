@@ -1,10 +1,12 @@
-import "./globals.css";
 import { metadataInfo } from "../../data/metadata";
-import Navbar from "./components/navbar";
-import Footer from "@/app/components/footer";
+// import Navbar from "./components/navbar";
+// import Footer from "@/app/components/footer";
 // import { local } from "../../public/fonts/";
 // import { Inter} from "next/font/google";
 import { Outfit } from "next/font/google";
+import { Wrapper } from "./wrapper";
+
+import "./globals.css";
 
 export const metadata = {
   title: `${metadataInfo.title}`,
@@ -26,9 +28,7 @@ export default function RootLayout({
       <body
         className={`${outfit.className} bg-[#141516] h-screen flex flex-col justify-between text-gray-300`}
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <Wrapper> {children}</Wrapper>
       </body>
     </html>
   );

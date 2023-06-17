@@ -4,17 +4,28 @@ import Image from "next/image";
 import Link from "next/link";
 // import Gallery from "./gallery";
 import New from "./new";
+import { FiCommand } from "react-icons/fi";
+import { useKmenu } from "kmenu";
 
 function Main() {
+  const { toggle } = useKmenu();
   return (
     <div>
       <div className="flex-col-reverse px-2 mt-14 lg:mt-0 lg:flex-row lg-flex-row flex justify-center items-center md:px-48">
         {/* short about me  */}
         <div className="text-sm leading-6 flex w-ful py-6 px-4 flex-col justify-center gap-y-10 lg:w-2/3 md:text-md text-zinc-400 mainText ">
-          <h2 className="flex justify-center md:justify-start text-lg font-semibold">
-            👋🏻 hi, I&apos;m
-            <span className="text-myColor pl-2"> Prajna,</span>
-          </h2>
+          <div className="flex-none md:flex md:gap-96">
+            <h2 className="flex justify-center md:justify-start text-lg font-semibold">
+              👋🏻 hi, I&apos;m
+              <span className="text-myColor pl-2"> Prajna,</span>
+            </h2>
+            <button
+              className="hidden md:flex items-center hover:bg-zinc-800 px-2 rounded hover:scale-105 transition-transform duration-300"
+              onClick={toggle}
+            >
+              <FiCommand />
+            </button>
+          </div>
 
           <p>
             I&apos;m a fullstack developer who loves building minimal, modern
