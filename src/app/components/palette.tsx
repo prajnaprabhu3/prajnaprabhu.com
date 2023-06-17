@@ -225,7 +225,7 @@ const Palette: FC = () => {
 
     setLoadingCommands(nested);
     setTimeout(() => setAwaiting(false), 1000);
-  }, [open, setOpen]);
+  });
 
   return (
     <CommandWrapper>
