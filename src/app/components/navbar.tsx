@@ -50,9 +50,9 @@ function Navbar() {
     <div className="mt-6 md:mt-2 sticky h-10 md:z-10 md:top-6 flex justify-around space-x-10 items-center">
       {/* logo  */}
       <Link href="/">
-        <div className="flex justify-center text-xl items-end">
+        <div className="flex justify-center text-xl items-center">
           <p>prajna</p>
-          <span className="text-3xl text-myColor">.</span>
+          <span className="text-3xl text-myColor mb-1">.</span>
         </div>
       </Link>
 

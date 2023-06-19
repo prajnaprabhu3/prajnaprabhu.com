@@ -9,3 +9,26 @@
 .mainText {
   font-size: 1.05rem;
 }
+
+::-moz-selection {
+  background: #f3a5b4;
+  /* background: #d6a3ac; */
+  background-color: #ffaac9;
+  /* color: #ffff; */
+  color: black;
+}
+::-webkit-selection {
+  background: #ff869c;
+  /* background: #df8b9a; */
+  /* background: #d6a3ac; */
+  background-color: #ffaac9;
+  /* color: #ffff; */
+  color: black;
+}
+::selection {
+  background: #ff869c;
+  /* background: #d6a3ac; */
+  background-color: #ffaac9;
+  /* color: #ffff; */
+  color: black;
+}

@@ -19,6 +19,7 @@ export const Wrapper = ({ children }: { children: ReactNode }) => {
     inputBorder: "#2F2F33",
     inputColor: "#828282",
     commandActive: "#ffff",
+    boxShadow: "0px 0px 0px 0px #00000020",
   };
   return (
     <MenuProvider config={config}>

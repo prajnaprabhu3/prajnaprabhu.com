@@ -5,7 +5,7 @@ import Experience from "../components/experience";
 
 function About() {
   return (
-    <div className="w-full z-8 gap-y-20 px-4 flex flex-col md:gap-y-28 md:w-1/2 mx-auto md:px-4 mt-10 md:mt-2 md:pt-20 ">
+    <div className="w-full z-8 gap-y-20 px-4 flex flex-col md:gap-y-28 md:w-1/2 mx-auto md:px-4 2xl:px-20 mt-10 md:mt-2 md:pt-20 ">
       <div className="">
         {/* image  */}
         <div className="w-full gap-x-4 flex md:w-1/2 h-16  items-center">

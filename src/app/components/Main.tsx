@@ -12,7 +12,7 @@ function Main() {
     <div>
       <div className="flex-col-reverse px-2 mt-14 lg:flex-col-reverse lg:mt-0 xl:flex-row  flex justify-center items-center md:px-48 2xl:w-3/4 mx-auto">
         {/* short about me  */}
-        <div className="text-sm  leading-6 flex w-ful py-6 px-4 md:px-8 flex-col justify-center gap-y-10 lg:w-2/3 md:text-md text-zinc-400 mainText ">
+        <div className="text-sm  leading-6 flex w-ful py-6 px-4 md:px-14 flex-col justify-center gap-y-10 lg:w-2/3 md:text-md text-zinc-400 mainText ">
           <div className="flex-none md:flex justify-between md:pr-12">
             {/* <div className="flex-none md:flex md:gap-96"> */}
             <h2 className="flex justify-center md:justify-start text-lg font-semibold">
