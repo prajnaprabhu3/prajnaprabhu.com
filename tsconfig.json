@@ -32,7 +32,8 @@
     "tailwind.config.ts",
     "next.config.js",
     "postcss.config.js",
-    "build/types/**/*.ts"
+    "build/types/**/*.ts",
+    "src/hooks/useMousePosition.js"
   ],
   "exclude": ["node_modules"]
 }

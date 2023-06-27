@@ -11,24 +11,26 @@
 }
 
 ::-moz-selection {
-  background: #f3a5b4;
-  /* background: #d6a3ac; */
-  background-color: #ffaac9;
-  /* color: #ffff; */
-  color: black;
+  background-color: #ff869c;
 }
 ::-webkit-selection {
-  background: #ff869c;
-  /* background: #df8b9a; */
-  /* background: #d6a3ac; */
-  background-color: #ffaac9;
-  /* color: #ffff; */
+  background-color: #ff869c;
   color: black;
 }
 ::selection {
-  background: #ff869c;
-  /* background: #d6a3ac; */
-  background-color: #ffaac9;
-  /* color: #ffff; */
+  background-color: #ff869c;
   color: black;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-zinc-600;
+  border-radius: 2rem;
 }

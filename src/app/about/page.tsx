@@ -2,6 +2,26 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Experience from "../components/experience";
+import { contactLinks } from "@/../data/contact";
+
+const social = [
+  {
+    id: "email",
+    href: contactLinks.email,
+  },
+  {
+    id: "github",
+    href: contactLinks.github,
+  },
+  {
+    id: "twitter",
+    href: contactLinks.twitter,
+  },
+  {
+    id: "linkedin",
+    href: contactLinks.linkedin,
+  },
+];
 
 function About() {
   return (
@@ -75,6 +95,20 @@ function About() {
           </p>
         </div>
         {/* text ends  */}
+
+        {/* <div className="flex items-center gap-4 mt-10">
+          <h2 className="text-zinc-400 text-lg">Connect: </h2> */}
+        <div className="flex gap-8 mt-10">
+          {social.map((item) => (
+            <p
+              key={item.id}
+              className="text-myColor capitalize hover:underline cursor-pointer"
+            >
+              {item.id}
+            </p>
+          ))}
+        </div>
+        {/* </div> */}
       </div>
 
       {/* work  */}
