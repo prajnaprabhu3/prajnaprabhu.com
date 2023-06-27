@@ -1,9 +1,9 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import Image from "next/image";
+// import { useEffect, useState } from "react";
+// import Image from "next/image";
 import Garden from "../components/garden";
-import { Fetch } from "./fetch";
+// import { Fetch } from "./fetch";
 // import { books } from "../../../data/books";
 
 // export async function Fetch(isbn: string) {
@@ -16,27 +16,27 @@ import { Fetch } from "./fetch";
 // }
 
 const Books: React.FC = () => {
-  const isbns = [
-    "9781451648546",
-    "9781409181644",
-    "9789353057831",
-    "9780349431390",
-  ];
+  // const isbns = [
+  //   "9781451648546",
+  //   "9781409181644",
+  //   "9789353057831",
+  //   "9780349431390",
+  // ];
 
-  const books = [];
+  // const books = [];
 
-  useEffect(() => {
-    isbns.forEach((isbn: string) => {
-      Fetch(isbn).then((result) => {
-        // Do something with this array here
-        books.push(result);
-      });
-      // const result = Fetch(isbn);
-    });
-    // runFunction();
-  }, [books]);
+  // useEffect(() => {
+  //   isbns.forEach((isbn: string) => {
+  //     Fetch(isbn).then((result) => {
+  //       // Do something with this array here
+  //       books.push(result);
+  //     });
+  //     // const result = Fetch(isbn);
+  //   });
+  //   // runFunction();
+  // }, [books]);
 
-  console.log(books);
+  // console.log(books);
 
   return (
     <div className=" flex flex-col gap-10 mt-16  w-5/6 mx-auto mt-30 text-white">
