@@ -34,10 +34,10 @@ function About() {
             height="60"
             width="60"
             src="/images/me.png"
-            className="rounded-lg p-0.5 border-2 border-zinc-800"
+            className="rounded-lg p-0.5 border-2 dark:border-zinc-800"
           />
 
-          <div className="text-base text-gray-200 md:text-lg font-light ">
+          <div className="text-base dark:text-gray-200 md:text-lg font-light ">
             <p>Prajna Prabhu</p>
             <p className="text-xs md:text-base  text-zinc-500">
               Fullstack developer based in India
@@ -45,7 +45,7 @@ function About() {
           </div>
         </div>
         {/* text  */}
-        <div className="text-sm flex flex-col justify-center items-start gap-y-6 mt-8 md:text-base text-zinc-400 font-light">
+        <div className="text-sm flex flex-col justify-center items-start gap-y-6 mt-8 md:text-base dark:text-zinc-400 font-light">
           <p>
             I&apos;m a fullstack developer who loves building minimal, modern
             and beautiful websites, mobile apps, and user interfaces.

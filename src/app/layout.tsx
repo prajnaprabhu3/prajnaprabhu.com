@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${outfit.className} bg-[#141516] h-screen flex flex-col justify-between text-gray-300`}
+        className={`${outfit.className} dark:bg-[#141516] bg-[#f7f3f3] h-screen flex flex-col justify-between text-black dark:text-gray-300`}
       >
         <Wrapper>{children}</Wrapper>
       </body>

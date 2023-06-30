@@ -20,7 +20,7 @@ const ProjectCard: React.FC<ProjectProps> = (props: ProjectProps) => {
     <Link
       href={props.src}
       target="_blank"
-      className="bg-[#1b1d1e] flex flex-col gap-y-2 w-full md:w-4/6 pb-5 rounded-xl delay-75  hover:scale-95 transition-transform duration-300 ease-out border-2 border-zinc-800 garden"
+      className="bg-gray-50 dark:bg-[#1b1d1e] flex flex-col gap-y-2 w-full md:w-4/6 pb-5 rounded-xl delay-75  hover:scale-95 transition-transform duration-300 ease-out border dark:border-2 dark:border-zinc-800 garden"
     >
       <Image
         src={props.img}

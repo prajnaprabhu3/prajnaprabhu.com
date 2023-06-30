@@ -19,7 +19,7 @@ function Footer() {
     <>
       <div className="space-x-2 pt-8 z-100 sticky bottom-4 md:hidden lg:hidden flex justify-around md:space-x-10 items-center">
         {/* navigation */}
-        <div className="sticky bottom-0  z-100 flex space-x-1 w-74 rounded-full py-1.5 px-1 border-2 border-zinc-800 drop-shadow-lg backdrop-filter backdrop-blur-xl bg-opacity-30">
+        <div className="sticky bottom-0  z-100 flex space-x-1 w-74 rounded-full py-1.5 px-1 bg-[#ece8e8] dark:bg-[#141516] dark:border-2 dark:border-zinc-800 drop-shadow-md backdrop-filter backdrop-blur-xl dark:bg-opacity-30">
           {tabs.map((tab) => (
             <button
               key={tab.id}
@@ -34,7 +34,7 @@ function Footer() {
               {activeTab === tab.id && (
                 <motion.span
                   layoutId="bubble"
-                  className="absolute inset-0 -z-20 bg-[#262626] "
+                  className="absolute inset-0 -z-20 bg-white dark:bg-[#262626] "
                   style={{ borderRadius: 9999 }}
                   transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                 />
@@ -45,7 +45,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="hidden h-12 md:flex lg:flex z-10 bg-[#141516] justify-center text-sm py-4 font-normal text-zinc-600 border-t md:border-zinc-800">
+      <div className="hidden h-12 md:flex lg:flex z-10  dark:bg-[#141516] justify-center text-sm py-4 font-normal text-zinc-600 border-t  md:dark:border-zinc-800">
         <p>© Prajna Prabhu 2023. No cookies here 🍪 </p>
       </div>
     </>

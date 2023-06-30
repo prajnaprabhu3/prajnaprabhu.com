@@ -2,17 +2,24 @@ import { FiCommand } from "react-icons/fi";
 import { useKmenu } from "kmenu";
 import Link from "next/link";
 import New from "./new";
+import useSound from "use-sound";
 
 import BlurImage from "./blurImage";
 
 function Main() {
   const { toggle } = useKmenu();
+  const [playSound] = useSound("/sounds/button-click.mp3");
+
+  function kmenuClick() {
+    playSound();
+    toggle();
+  }
 
   return (
     <div>
       <div className="flex-col-reverse px-2 mt-14 lg:flex-col-reverse lg:mt-0 xl:flex-row  flex justify-center items-center md:px-48 2xl:w-3/4 mx-auto">
         {/* short about me  */}
-        <div className="text-sm  leading-6 flex w-ful py-6 px-4 md:px-14 flex-col justify-center gap-y-10 lg:w-2/3 md:text-md text-zinc-400 mainText ">
+        <div className="text-sm  leading-6 flex w-ful py-6 px-4 md:px-14 flex-col justify-center gap-y-10 lg:w-2/3 md:text-md dark:text-zinc-400 mainText ">
           <div className="flex-none md:flex justify-between md:pr-12">
             {/* <div className="flex-none md:flex md:gap-96"> */}
             <h2 className="flex justify-center md:justify-start text-lg font-semibold">
@@ -21,8 +28,9 @@ function Main() {
             </h2>
 
             <button
-              className="hidden md:flex items-center hover:bg-zinc-800 px-2 rounded hover:scale-105 transition-transform duration-300"
-              onClick={toggle}
+              className="hidden md:flex items-center hover:bg-white dark:hover:bg-zinc-800 px-2 rounded hover:scale-105 transition-transform duration-300"
+              // onClick={toggle}
+              onClick={kmenuClick}
             >
               <FiCommand />
             </button>

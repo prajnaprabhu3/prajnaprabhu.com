@@ -5,11 +5,20 @@
 - [x] Make about page responsive
 - [x] Gallery section in Home
 - [x] Get works page completed
-- [ ] Setup layout for blog page
-- [ ] Include a dummy blog for now
+- [ ] Blogs page
+  - [ ] Setup layout for blog page
+  - [ ] Include a dummy blog for now
 - [ ] Books page
   - [x] should have the **garden** notion link somewhere
   - [ ] plan how the book layout should be
+  - [ ] script to fetch book details(using isbn as for now)
 - [x] add kmenu utility
 - [ ] guestbook page
+- [x] me photo blur on load
 - [ ] lazy loading for images
+- [ ] add framer motion animation
+  - [ ] page transition
+  - [ ] on-scroll animations
+- [x] text selection color change
+- [x] scrollbar style
+- [x] theme toggle

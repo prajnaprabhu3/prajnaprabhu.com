@@ -31,6 +31,9 @@ const Gallery = () => {
                 className="h-full w-full rounded-xl object-cover"
                 height="250"
                 width="250"
+                // objectFit="cover"
+                // objectPosition="center"
+                // placeholder="blur"
               />
             </div>
           ))}

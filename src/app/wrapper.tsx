@@ -8,6 +8,8 @@ import { MenuProvider, MenuConfig } from "kmenu";
 import "kmenu/dist/index.css";
 import Palette from "./components/palette";
 
+import { ThemeProvider } from "next-themes";
+
 export const Wrapper = ({ children }: { children: ReactNode }) => {
   const config: MenuConfig = {
     backdropColor: "#14151630",
@@ -22,11 +24,13 @@ export const Wrapper = ({ children }: { children: ReactNode }) => {
     boxShadow: "0px 0px 0px 0px #00000020",
   };
   return (
-    <MenuProvider config={config}>
-      <Palette />
-      <Navbar />
-      {children}
-      <Footer />
-    </MenuProvider>
+    <ThemeProvider enableSystem={true} attribute="class">
+      <MenuProvider config={config}>
+        <Palette />
+        <Navbar />
+        {children}
+        <Footer />
+      </MenuProvider>
+    </ThemeProvider>
   );
 };
