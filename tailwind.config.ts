@@ -13,6 +13,7 @@ module.exports = {
       colors: {
         // myColor: "#FE9FA1",
         myColor: "#FF869C",
+        // myColor: "#d33669",
       },
       fontFamily: {
         // sans: ["var(--font-outfit)"],

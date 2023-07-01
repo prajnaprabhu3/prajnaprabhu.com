@@ -1,5 +1,6 @@
 import { metadataInfo } from "../../data/metadata";
 import { Outfit } from "next/font/google";
+import { Inter } from "next/font/google";
 import { Wrapper } from "./wrapper";
 
 import "./globals.css";
@@ -8,6 +9,10 @@ export const metadata = {
   title: `${metadataInfo.title}`,
   description: `${metadataInfo.description}`,
 };
+
+const inter = Inter({
+  subsets: ["latin"],
+});
 
 const outfit = Outfit({
   subsets: ["latin"],

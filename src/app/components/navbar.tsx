@@ -134,7 +134,7 @@ function Navbar() {
       </div>
 
       {/* contact  */}
-      <div className="flex items-center text-lg space-x- md:space-x-4 ">
+      <div className="flex items-center text-lg space-x-3 md:space-x-4 ">
         {renderThemeChanger()}
         {social.map((item, id) => (
           <a
