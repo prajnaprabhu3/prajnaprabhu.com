@@ -22,3 +22,4 @@
 - [x] text selection color change
 - [x] scrollbar style
 - [x] theme toggle
+- [x] not-found page

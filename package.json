@@ -15,6 +15,7 @@
     "test-all": "pnpm run check-format && pnpm run check-lint && pnpm run check-type && pnpm run build"
   },
   "dependencies": {
+    "@mdx-js/react": "^2.3.0",
     "@next/font": "^13.4.4",
     "@types/node": "20.0.0",
     "@types/react": "18.2.5",
@@ -23,7 +24,9 @@
     "clsx": "^1.2.1",
     "eslint-config-next": "13.4.1",
     "framer-motion": "^10.12.10",
+    "gray-matter": "^4.0.3",
     "kmenu": "1.3.0-beta",
+    "markdown-to-jsx": "^7.2.1",
     "next": "13.4.1",
     "next-auth": "^4.22.1",
     "next-themes": "^0.2.1",
@@ -39,6 +42,7 @@
   },
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/typography": "^0.5.9",
     "@typescript-eslint/eslint-plugin": "^5.59.5",
     "@typescript-eslint/parser": "^5.59.5",
     "eslint": "^8.40.0",

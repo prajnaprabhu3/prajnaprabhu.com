@@ -1,6 +1,7 @@
 import { metadataInfo } from "../../data/metadata";
 import { Outfit } from "next/font/google";
 import { Inter } from "next/font/google";
+import { Cabin } from "next/font/google";
 import { Wrapper } from "./wrapper";
 
 import "./globals.css";
@@ -15,8 +16,13 @@ const inter = Inter({
 });
 
 const outfit = Outfit({
-  subsets: ["latin"],
-  weight: ["300"],
+  subsets: ["latin-ext"],
+  weight: ["400"],
+});
+
+const cabin = Cabin({
+  subsets: ["vietnamese"],
+  weight: ["400"],
 });
 
 export default function RootLayout({
