@@ -25,10 +25,10 @@ const social = [
 
 function About() {
   return (
-    <div className="w-full z-8 gap-y-20 px-4 flex flex-col md:gap-y-28 md:w-1/2 mx-auto md:px-4 2xl:px-20 mt-10 md:mt-2 md:pt-20 ">
+    <div className=" z-8 gap-y-20 px-4 flex flex-col md:gap-y-28 md:max-w-3xl mx-auto md:px-4 2xl:px-20 mt-10 md:mt-2 md:pt-20 ">
       <div className="">
         {/* image  */}
-        <div className="w-full gap-x-4 flex md:w-1/2 h-16  items-center">
+        <div className="w-full gap-x-4 flex md:w-2/3 h-16  items-center">
           <Image
             alt="prajna"
             height="60"
@@ -98,11 +98,11 @@ function About() {
 
         {/* <div className="flex items-center gap-4 mt-10">
           <h2 className="text-zinc-400 text-lg">Connect: </h2> */}
-        <div className="flex gap-8 mt-10">
+        <div className="flex gap-8 mt-10 justify-center md:justify-start">
           {social.map((item) => (
             <p
               key={item.id}
-              className="text-myColor capitalize hover:underline cursor-pointer"
+              className="text-sm md:text-base  text-myColor capitalize hover:underline cursor-pointer"
             >
               {item.id}
             </p>

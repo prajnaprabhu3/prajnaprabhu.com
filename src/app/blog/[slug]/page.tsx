@@ -26,17 +26,17 @@ const page = (props: any) => {
   const content = getPostContent(slug);
 
   return (
-    <div className="px-4 max-w-2xl mx-auto my-10 mt-4 md:mt-20">
+    <div className="px-4 md:px-6 max-w-2xl mx-auto mb-10  mt-4 md:mt-14">
       <Link href="/blog" className="mb-12">
         <BsArrowLeftShort className="text-2xl -ml-2  md:-ml-8" />
       </Link>
-      <div className="mt-4">
+      <div className="mt-2">
         <h1 className="text-2xl font-bold">{content.data.title}</h1>
         <p className="text-zinc-500 py-1 text-sm font-semibold">
           {content.data.date}
         </p>
       </div>
-      <article className="prose prose-xs dark:prose-invert prose-p:font-normal prose-p:mt-4 prose-a:text-myColor dark:text-zinc-400">
+      <article className="prose prose-xs dark:prose-invert prose-a:text-myColor dark:text-zinc-400">
         <Markdown>{content.content}</Markdown>
       </article>
     </div>

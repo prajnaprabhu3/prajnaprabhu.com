@@ -15,9 +15,6 @@ module.exports = {
         myColor: "#FF869C",
         // myColor: "#d33669",
       },
-      fontFamily: {
-        // sans: ["var(--font-outfit)"],
-      },
     },
   },
   plugins: [
