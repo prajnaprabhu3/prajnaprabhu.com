@@ -52,7 +52,7 @@ function Main() {
                 MIT Manipal
               </a>
             </u>
-            , pursuing a Bachelor&apos; in Data Science.
+            , pursuing a Bachelor&apos;s in Data Science.
           </p>
 
           <p>

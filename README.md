@@ -5,9 +5,9 @@
 - [x] Make about page responsive
 - [x] Gallery section in Home
 - [x] Get works page completed
-- [ ] Blogs page
-  - [ ] Setup layout for blog page
-  - [ ] Include a dummy blog for now
+- [x] Blogs page
+  - [x] Setup layout for blog page
+  - [x] Include a dummy blog for now
 - [ ] Books page
   - [x] should have the **garden** notion link somewhere
   - [ ] plan how the book layout should be
