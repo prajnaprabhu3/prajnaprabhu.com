@@ -2,9 +2,9 @@
 
 const GuestBook = async () => {
   return (
-    <div className="flex flex-col gap-14 mx-auto w-1/2 -mt-72">
+    <div className="flex flex-col gap-14 mx-auto w-1/2 bg-green-200 -mt-72">
       <h2 className="text-2xl mx-auto">
-        sign the guestbook: <h1></h1>
+        sign my guestbook: <h1></h1>
       </h2>
 
       <div className="flex justify-between">

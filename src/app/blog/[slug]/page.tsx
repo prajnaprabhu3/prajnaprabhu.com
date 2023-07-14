@@ -36,7 +36,7 @@ const page = (props: any) => {
           {content.data.date}
         </p>
       </div>
-      <article className="prose prose-xs dark:prose-invert prose-a:text-myColor dark:text-zinc-400">
+      <article className="prose prose-xs dark:prose-invert prose-a:text-myColor text-gray-600 dark:text-zinc-400">
         <Markdown>{content.content}</Markdown>
       </article>
     </div>

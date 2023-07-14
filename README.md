@@ -8,14 +8,21 @@
 - [x] Blogs page
   - [x] Setup layout for blog page
   - [x] Include a dummy blog for now
+  - [ ] include image at top in each blog
 - [ ] Books page
-  - [x] should have the **garden** notion link somewhere
+  - [x] script to fetch book details(using isbn
+  - [ ] use notion as db to fetch data
   - [ ] plan how the book layout should be
-  - [ ] script to fetch book details(using isbn as for now)
+- [ ] create a seperate page for **Bookmarks**
+  - [ ] checkout the design for the UI
+  - [x] should have the **garden** notion link somewhere
 - [x] add kmenu utility
 - [ ] guestbook page
-- [x] me photo blur on load
-- [ ] lazy loading for images
+  - consider appropriate db - planetscale or mongodb with prisma ORM
+  - next-auth for authentication
+- Images
+  - [x] me photo blur on load
+  - [ ] lazy loading for images
 - [ ] add framer motion animation
   - [ ] page transition
   - [ ] on-scroll animations

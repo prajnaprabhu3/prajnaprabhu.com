@@ -38,7 +38,7 @@ function Main() {
 
           <p>
             I&apos;m a fullstack developer who loves building minimal, modern
-            and beautiful websites, mobile apps, and user interfaces.
+            and beautiful websites, mobile apps, and user interfaces.{" "}
             <span className="text-myColor">
               I personally like to work in the intersection of product &
               engineering.

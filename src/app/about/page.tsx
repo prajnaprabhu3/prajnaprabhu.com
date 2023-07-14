@@ -25,7 +25,7 @@ const social = [
 
 function About() {
   return (
-    <div className=" z-8 gap-y-20 px-4 flex flex-col md:gap-y-28 md:max-w-3xl mx-auto md:px-4 2xl:px-20 mt-10 md:mt-2 md:pt-20 ">
+    <div className="z-8 gap-y-20 px-4 flex flex-col md:gap-y-28 md:max-w-2xl mx-auto md:px-4 2xl:px-20 mt-10 md:mt-2 md:pt-20 ">
       <div className="">
         {/* image  */}
         <div className="w-full gap-x-4 flex md:w-2/3 h-16  items-center">

@@ -57,7 +57,9 @@ const social = [
 function Navbar() {
   const [activeTab, setActiveTab] = useState(tabs[0].id);
   const { systemTheme, theme, setTheme } = useTheme();
-  const [toggleSound] = useSound("/sounds/toggle.mp3");
+  const [toggleSound] = useSound("/sounds/toggle.mp3", {
+    volume: 0.1,
+  });
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
