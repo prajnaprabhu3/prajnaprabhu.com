@@ -33,7 +33,8 @@
     "next.config.js",
     "postcss.config.js",
     "build/types/**/*.ts",
-    "src/hooks/useMousePosition.js"
+    "src/hooks/useMousePosition.js",
+    "src/app/bookmark/page.tsx"
   ],
   "exclude": ["node_modules"]
 }

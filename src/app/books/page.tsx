@@ -1,10 +1,10 @@
 "use client";
 
 // import { useEffect, useState } from "react";
-// import Image from "next/image";
-import Garden from "../components/garden";
+// import Garden from "../components/garden";
 // import { Fetch } from "./fetch";
-// import { books } from "../../../data/books";
+import { books } from "../../../data/books";
+import BookCard from "../components/bookCard";
 
 // export async function Fetch(isbn: string) {
 //   const response = await fetch(
@@ -39,25 +39,15 @@ const Books: React.FC = () => {
   // console.log(books);
 
   return (
-    <div className=" flex flex-col gap-10 mt-16  w-5/6 mx-auto mt-30 text-white">
-      <Garden />
+    <div className="flex w-full flex-col justify-center mx-auto md:w-1/2 2xl:w-1/3 mt-20">
+      {/* <Garden /> */}
 
-      <div className="grid grid-cols-5 gap-24 my-12">
-        {/* {books.map((item, id) => (
-          <div key={id}>
-            <Image
-              alt={item.title}
-              src={item.imageLinks}
-              height="200"
-              width="200"
-              className="rounded"
-            />
-            <p>{item.title}</p>
-          </div>
-          <p key={id}>hello</p>
-        ))} */}
+      <h2 className="mx-auto text-4xl">Books</h2>
 
-        {/* {books.length} */}
+      <div className="grid grid-cols-1 justify-items-center md:grid-cols-2 gap-x-8 gap-y-12  my-12">
+        {books.map((item, id) => (
+          <BookCard book={item} key={id} />
+        ))}
       </div>
     </div>
   );

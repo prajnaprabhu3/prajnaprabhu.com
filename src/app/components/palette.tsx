@@ -28,6 +28,7 @@ import {
   FiTwitter,
   FiLinkedin,
   FiZap,
+  FiBookmark,
 } from "react-icons/fi";
 
 // import styles from "../../styles/palette.module.css";
@@ -64,6 +65,11 @@ const Palette: FC = () => {
           icon: <FiBookOpen />,
           text: "Guestbook",
           perform: () => router.push("/guestbook"),
+        },
+        {
+          icon: <FiBookmark />,
+          text: "Bookmark",
+          perform: () => router.push("/bookmark"),
         },
       ],
     },

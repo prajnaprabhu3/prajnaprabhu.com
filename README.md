@@ -13,14 +13,14 @@
   - [x] script to fetch book details(using isbn
   - [ ] use notion as db to fetch data
   - [ ] plan how the book layout should be
-- [ ] create a seperate page for **Bookmarks**
+- [ ] **Bookmarks** page
   - [ ] checkout the design for the UI
   - [x] should have the **garden** notion link somewhere
 - [x] add kmenu utility
-- [ ] guestbook page
+- [ ] Guestbook page
   - consider appropriate db - planetscale or mongodb with prisma ORM
   - next-auth for authentication
-- Images
+- [ ] Images
   - [x] me photo blur on load
   - [ ] lazy loading for images
 - [ ] add framer motion animation
@@ -30,3 +30,4 @@
 - [x] scrollbar style
 - [x] theme toggle
 - [x] not-found page
+- [ ] link preview wherever needed

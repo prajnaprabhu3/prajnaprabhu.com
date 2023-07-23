@@ -11,16 +11,20 @@
 }
 
 ::-moz-selection {
-  background-color: #ff869c;
+  @apply bg-[#ff869c];
 }
-::-webkit-selection {
-  background-color: #ff869c;
-  color: black;
-}
+
+::-webkit-selection,
 ::selection {
-  background-color: #ff869c;
-  color: black;
+  @apply bg-[#ff869c] text-[#232323];
+  /* color: rgb(35, 35, 35); */
 }
+
+/* ::selection {
+  background-color: #ff869c;
+  color: rgb(35, 35, 35); 
+  @apply bg-[#ff869c] text-[#232323];
+} */
 
 ::-webkit-scrollbar {
   width: 8px;
