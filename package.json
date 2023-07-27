@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@mdx-js/react": "^2.3.0",
+    "@microlink/react": "^5.5.15",
     "@next/font": "^13.4.4",
     "@types/node": "20.0.0",
     "@types/react": "18.2.5",
