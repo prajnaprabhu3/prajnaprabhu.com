@@ -41,12 +41,12 @@
 
 :root {
   --microlink-background-color: #eae8e8;
-   --microlink-hover-background-color: #e4e4e4;
+  --microlink-hover-background-color: #e4e4e4;
 }
 
 .dark {
   --microlink-background-color: #1b1c1d;
-  --microlink-border-style: solid
+  --microlink-border-style: solid;
   --microlink-border: 1px solid #38393a;
   --microlink-color: #bfbfbf;
   --microlink-hover-background-color: #232425;
