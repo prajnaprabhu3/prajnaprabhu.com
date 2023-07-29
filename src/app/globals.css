@@ -46,7 +46,8 @@
 
 .dark {
   --microlink-background-color: #1b1c1d;
-  --microlink-border-style: solid;
+  --microlink-border-style: solid
+  --microlink-border-width: 1px;
   --microlink-border: 1px solid #38393a;
   --microlink-color: #bfbfbf;
   --microlink-hover-background-color: #232425;
