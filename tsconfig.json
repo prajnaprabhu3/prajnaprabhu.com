@@ -34,7 +34,8 @@
     "postcss.config.js",
     "build/types/**/*.ts",
     "src/hooks/useMousePosition.js",
-    "src/app/bookmark/page.tsx"
+    "src/app/bookmark/page.tsx",
+    "src/types/declarations.d.ts"
   ],
   "exclude": ["node_modules"]
 }

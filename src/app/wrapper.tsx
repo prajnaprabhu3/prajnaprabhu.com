@@ -10,6 +10,8 @@ import Palette from "./components/palette";
 
 import { ThemeProvider } from "next-themes";
 
+import { Analytics } from "@vercel/analytics/react";
+
 export const Wrapper = ({ children }: { children: ReactNode }) => {
   const config: MenuConfig = {
     backdropColor: "#14151630",
@@ -31,6 +33,7 @@ export const Wrapper = ({ children }: { children: ReactNode }) => {
         {children}
         <Footer />
       </MenuProvider>
+      <Analytics />
     </ThemeProvider>
   );
 };
