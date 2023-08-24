@@ -3,7 +3,7 @@ import fs from "fs";
 import Markdown from "markdown-to-jsx";
 import Link from "next/link";
 import matter from "gray-matter";
-import getPostMetadata from "@/utils/getPostMetadata";
+import getPostMetadata from "@/lib/getPostMetadata";
 import { BsArrowLeftShort } from "react-icons/bs";
 
 const getPostContent = (slug: string) => {
@@ -26,9 +26,10 @@ const page = (props: any) => {
   const content = getPostContent(slug);
 
   return (
-    <div className="px-4 md:px-6 max-w-2xl mx-auto mb-10  mt-4 md:mt-14">
-      <Link href="/blog" className="mb-12">
-        <BsArrowLeftShort className="text-2xl -ml-2  md:-ml-8" />
+    <div className="px-4 md:px-6 max-w-2xl mx-auto mb-10  mt-4 md:mt-20">
+      <Link href="/blog" className="flex items-centermb-12">
+        <BsArrowLeftShort className="text-2xl -ml-2  md:-ml-8 hover:-translate-x-1 duration-200 cursor-pointer" />
+        {/* <p>Back</p> */}
       </Link>
       <div className="mt-2">
         <h1 className="text-2xl font-bold">{content.data.title}</h1>

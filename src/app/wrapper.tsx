@@ -25,6 +25,7 @@ export const Wrapper = ({ children }: { children: ReactNode }) => {
     commandActive: "#ffff",
     boxShadow: "0px 0px 0px 0px #00000020",
   };
+
   return (
     <ThemeProvider enableSystem={true} attribute="class">
       <MenuProvider config={config}>

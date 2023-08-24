@@ -34,7 +34,7 @@ function About() {
             height="60"
             width="60"
             src="/images/me.png"
-            className="rounded-lg p-0.5 border-2 dark:border-zinc-800"
+            className="rounded-lg p-0.5 border border-gray-300 dark:border-zinc-800"
           />
 
           <div className="text-base dark:text-gray-200 md:text-lg font-light ">

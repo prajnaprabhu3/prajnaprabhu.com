@@ -1,24 +1,24 @@
 export const company = [
   {
     id: 1,
-    title: "ABC",
+    title: "Hyper3",
     designation: "Frontend Engineer",
-    timeline: "Aug 2022-Sept 2023",
+    timeline: "Dec 2022-Apr 2023",
     details: [
-      "Plan, design, build, and implement the user interface systems of websites, software programs.",
-      "Contributed in 2 other projects using Svelte",
-      "Serve as an intermediary bridging the gap between the user and the backend developers, and tweak tools and platforms",
+      "Ideate, Plan and implement the user interface systems of main web app, software programs.",
+      "Nextjs, TypeScript, Redux, MongoDB ",
+      // "Serve as an intermediary bridging the gap between the user and the backend developers, and tweak tools and platforms",
     ],
   },
   {
     id: 2,
-    title: "BCD",
+    title: "Moback",
     designation: "Fullstack Engineer",
-    timeline: "Aug 2021-July 2022",
+    timeline: "June 2023-Aug 2023",
     details: [
-      "Plan, design, build, and implement the user interface systems of websites, software programs.",
-      "Contributed in 2 other projects using Svelte",
-      "Serve as an intermediary bridging the gap between the user and the backend developers, and tweak tools and platforms",
+      "Worked as a fullstack developer, contributing to few internal projects",
+      "Reactjs, TypeScript,Nodejs,MongoDB, Redux, Docker, CI/CD",
+      // "Serve as an intermediary bridging the gap between the user and the backend developers, and tweak tools and platforms",
     ],
   },
   {
