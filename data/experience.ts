@@ -21,15 +21,15 @@ export const company = [
       // "Serve as an intermediary bridging the gap between the user and the backend developers, and tweak tools and platforms",
     ],
   },
-  {
-    id: 3,
-    title: "XYZ",
-    designation: "Fullstack Engineer",
-    timeline: "Mar 2024-Present",
-    details: [
-      "Plan, design, build, and implement the user interface systems of websites, software programs.",
-      "Contributed in 2 other projects using Svelte",
-      "Serve as an intermediary bridging the gap between the user and the backend developers, and tweak tools and platforms",
-    ],
-  },
+  // {
+  //   id: 3,
+  //   title: "X",
+  //   designation: "Fullstack Engineer",
+  //   timeline: "Mar 2024-Present",
+  //   details: [
+  //     "Plan, design, build, and implement the user interface systems of websites, software programs.",
+  //     "Contributed in 2 other projects using Svelte",
+  //     "Serve as an intermediary bridging the gap between the user and the backend developers, and tweak tools and platforms",
+  //   ],
+  // },
 ];

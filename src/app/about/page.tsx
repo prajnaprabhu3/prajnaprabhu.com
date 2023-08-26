@@ -55,7 +55,7 @@ function About() {
             </span>
             . I enjoy working on React and all things
             <span className="text-myColor"> JavaScript & TypeScript</span>.
-            Lately I&apos;ve been interested in{" "}
+            Currently nerding out on native{" "}
             <span className="text-myColor"> iOS development </span>.
             {/* In the
             past I&apos;ve also worked with different languages like Python,
@@ -75,9 +75,8 @@ function About() {
 
           <p>
             Apart from all the nerdy and geeky things, I enjoy playing the
-            guitar, basketball, and reading books. My library mainly consists of
-            books on topics such as{" "}
-            <span className="text-myColor">startups</span>,{" "}
+            basketball, and reading books. My library mainly consists of books
+            on topics such as <span className="text-myColor">startups</span>,{" "}
             <span className="text-myColor">entrepreneurship</span> ,{" "}
             <span className="text-myColor">self-help</span> and{" "}
             <span className="text-myColor">investment</span>. You may also find

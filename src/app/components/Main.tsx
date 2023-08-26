@@ -57,8 +57,8 @@ function Main() {
           </p>
 
           <p>
-            I also enjoy playing guitar and reading books. You can take a look
-            at my library{" "}
+            I also enjoy playing basketball and reading books. You can take a
+            look at my library{" "}
             <u className="text-myColor">
               <Link href="/books">here</Link>
             </u>
