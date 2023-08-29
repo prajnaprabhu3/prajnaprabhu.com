@@ -1,3 +1,5 @@
+// "use client";
+
 import React from "react";
 import fs from "fs";
 import Markdown from "markdown-to-jsx";
@@ -5,6 +7,8 @@ import Link from "next/link";
 import matter from "gray-matter";
 import getPostMetadata from "@/lib/getPostMetadata";
 import { BsArrowLeftShort } from "react-icons/bs";
+
+// import { motion } from "framer-motion";
 
 const getPostContent = (slug: string) => {
   const folder = "posts/";
@@ -26,6 +30,12 @@ const page = (props: any) => {
   const content = getPostContent(slug);
 
   return (
+    // <motion.div
+    //   initial={{ y: 10, opacity: 0, scale: 0.99, rotate: "0.25deg" }}
+    //   animate={{ y: 0, opacity: 1, scale: 1, rotate: "0deg" }}
+    //   transition={{ duration: 0.25, delay: 0.1 }}
+    //   exit={{ y: 0 }}
+    // >
     <div className="px-4 md:px-6 max-w-2xl mx-auto mb-10  mt-4 md:mt-20">
       <Link href="/blog" className="flex items-centermb-12">
         <BsArrowLeftShort className="text-2xl -ml-2  md:-ml-8 hover:-translate-x-1 duration-200 cursor-pointer" />
@@ -41,6 +51,7 @@ const page = (props: any) => {
         <Markdown>{content.content}</Markdown>
       </article>
     </div>
+    // </motion.div>
   );
 };
 
