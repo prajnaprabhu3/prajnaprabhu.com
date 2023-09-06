@@ -19,14 +19,14 @@ function Footer() {
     <>
       <div className="space-x-2 pt-8 z-100 sticky bottom-4 md:hidden lg:hidden flex justify-around md:space-x-10 items-center">
         {/* navigation */}
-        <div className="sticky bottom-0  z-100 flex space-x-1 w-74 rounded-full py-1.5 px-1 bg-[#ece8e8] dark:bg-[#141516] dark:border-2 dark:border-zinc-800 drop-shadow-md backdrop-filter backdrop-blur-xl dark:bg-opacity-30">
+        <div className="sticky bottom-0  z-100 flex space-x-0.5 w-74 rounded-full py-1.5 px-1 bg-[#ece8e8] dark:bg-[#141516] dark:border-2 dark:border-zinc-800 drop-shadow-md backdrop-filter backdrop-blur-xl dark:bg-opacity-30">
           {tabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
               className={`${
                 activeTab === tab.id ? "text-myColor" : "hover:text-myColor"
-              } text-sm relative rounded-full px-4 py-1.5  font-lighter text-zinc-350  transition focus-visible:outline-2`}
+              } text-xs relative rounded-full px-4 py-1.5  font-lighter text-zinc-350  transition focus-visible:outline-2`}
               style={{
                 WebkitTapHighlightColor: "transparent",
               }}
@@ -34,7 +34,7 @@ function Footer() {
               {activeTab === tab.id && (
                 <motion.span
                   layoutId="bubble"
-                  className="absolute inset-0 -z-20 bg-white dark:bg-[#262626] "
+                  className="absolute inset-0 -z-20 bg-white px-4 dark:bg-[#262626] "
                   style={{ borderRadius: 9999 }}
                   transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                 />

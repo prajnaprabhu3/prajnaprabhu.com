@@ -110,7 +110,7 @@ function Navbar() {
       </Link>
 
       {/* navigation */}
-      <div className="hidden  md:flex lg:flex sticky bottom-0 space-x-1.5 w-96 rounded-full py-1.5 px-2 dark:border-2  bg-[#ece8e8] dark:bg-[#141516]  dark:border-zinc-800 dark:drop-shadow-md backdrop-filter backdrop-blur-xl  dark:bg-opacity-30">
+      <div className="hidden  md:flex lg:flex sticky bottom-0 space-x-1.5 w-96 rounded-full py-1.5 px-2 dark:border-2  bg-[#ece8e8]  dark:bg-[#141516]  dark:border-zinc-800 dark:drop-shadow-md backdrop-filter backdrop-blur-xl  dark:bg-opacity-30">
         {tabs.map((tab) => (
           <button
             key={tab.id}

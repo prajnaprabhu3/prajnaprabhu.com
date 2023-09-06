@@ -12,9 +12,9 @@
 - [ ] Books page
   - [x] script to fetch book details(using isbn
   - [ ] use notion as db to fetch data
-  - [ ] plan how the book layout should be
-- [ ] **Bookmarks** page
-  - [ ] checkout the design for the UI
+  - [x] plan how the book layout should be
+- [x] **Bookmarks** page
+  - [x] checkout the design for the UI
   - [x] should have the **garden** notion link somewhere
 - [x] add kmenu utility
 - [ ] Guestbook page
@@ -23,11 +23,11 @@
 - [ ] Images
   - [x] me photo blur on load
   - [ ] lazy loading for images
-- [ ] add framer motion animation
-  - [ ] page transition
+- [x] add framer motion animation
+  - [x] page transition
   - [ ] on-scroll animations
 - [x] text selection color change
 - [x] scrollbar style
 - [x] theme toggle
 - [x] not-found page
-- [ ] link preview wherever needed
+- [x] link preview wherever needed

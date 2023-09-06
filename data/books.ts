@@ -139,7 +139,7 @@ export const books = [
     id: 17,
     url: "/images/books/democratizing-knowledge.jpg",
     title: "Democratizing Knowledge",
-    author: "y Elizabeth Yin and Hung Pham",
+    author: "Elizabeth Yin and Hung Pham",
     status: "Reading",
     css: "#FFDD83",
   },

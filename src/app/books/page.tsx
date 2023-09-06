@@ -7,6 +7,7 @@ import { books } from "../../../data/books";
 import BookCard from "../components/bookCard";
 
 import { motion } from "framer-motion";
+import { Section } from "@/layouts/section";
 
 // export async function Fetch(isbn: string) {
 //   const response = await fetch(
@@ -46,6 +47,7 @@ const Books: React.FC = () => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
     >
+      {/* <Section className="flex w-full flex-col justify-center mx-auto md:w-1/2 2xl:w-1/3 mt-20"> */}
       <div className="flex w-full flex-col justify-center mx-auto md:w-1/2 2xl:w-1/3 mt-20">
         {/* <Garden /> */}
 
@@ -57,6 +59,7 @@ const Books: React.FC = () => {
           ))}
         </div>
       </div>
+      {/* </Section> */}
     </motion.div>
   );
 };
