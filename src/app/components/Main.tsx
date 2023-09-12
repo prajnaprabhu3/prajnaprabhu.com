@@ -42,7 +42,7 @@ function Main() {
         <div className="text-sm  leading-6 flex w-ful py-6 px-4 md:px-14 flex-col justify-center gap-y-10 lg:w-2/3 md:text-md dark:text-zinc-400 mainText ">
           <div className="flex-none md:flex justify-between md:pr-12">
             {/* <div className="flex-none md:flex md:gap-96"> */}
-            <h2 className="flex justify-center md:justify-start text-lg font-semibold">
+            <h2 className="flex justify-center md:justify-start text-md md:text-lg font-semibold">
               <p> 👋🏻 hi, I&apos;m</p>
               <span className="text-myColor pl-2"> Prajna,</span>
             </h2>
@@ -56,7 +56,7 @@ function Main() {
             </button>
           </div>
 
-          <p>
+          <p className="text-sm md:text-base">
             I&apos;m a fullstack developer who loves building minimal, modern
             and beautiful websites, mobile apps, and user interfaces.{" "}
             <span className="text-myColor">
@@ -65,7 +65,7 @@ function Main() {
             </span>
           </p>
 
-          <p>
+          <p className="text-sm md:text-base">
             I&apos;m currently a third year student at{" "}
             <u className="text-myColor">
               <a href="https://manipal.edu/mit.html" target="_blank">
@@ -75,7 +75,7 @@ function Main() {
             , pursuing a Bachelor&apos;s in Data Science.
           </p>
 
-          <p>
+          <p className="text-sm md:text-base">
             I also enjoy playing basketball and reading books. You can take a
             look at my library{" "}
             <u className="text-myColor">

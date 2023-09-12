@@ -17,7 +17,7 @@ export const company = [
     timeline: "June 2023-Aug 2023",
     details: [
       "Worked as a fullstack developer, contributing to few internal projects",
-      "Reactjs, TypeScript,Nodejs,MongoDB, Redux, Docker, CI/CD",
+      "Reactjs, Angularjs,TypeScript,Nodejs,MongoDB, Redux, Docker, CI/CD",
       // "Serve as an intermediary bridging the gap between the user and the backend developers, and tweak tools and platforms",
     ],
   },
