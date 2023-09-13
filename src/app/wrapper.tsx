@@ -1,6 +1,6 @@
 "use client";
 
-import type { ReactNode } from "react";
+import { useState, type ReactNode, useEffect } from "react";
 import Navbar from "./components/navbar";
 import Footer from "@/app/components/footer";
 
@@ -11,6 +11,7 @@ import Palette from "./components/palette";
 import { ThemeProvider } from "next-themes";
 
 import { Analytics } from "@vercel/analytics/react";
+import { KmenuWrapper } from "./kmenuWrapper";
 
 export const Wrapper = ({ children }: { children: ReactNode }) => {
   const config: MenuConfig = {
@@ -27,14 +28,21 @@ export const Wrapper = ({ children }: { children: ReactNode }) => {
   };
 
   return (
+    // <ThemeProvider enableSystem={true} attribute="class">
+    //   <MenuProvider config={config}>
+    // <Palette />
+    // <Navbar />
+    // {children}
+    // <Footer />
+    //   </MenuProvider>
+    //   <Analytics />
+    // </ThemeProvider>
     <ThemeProvider enableSystem={true} attribute="class">
-      <MenuProvider config={config}>
-        <Palette />
+      <KmenuWrapper>
         <Navbar />
         {children}
         <Footer />
-      </MenuProvider>
-      <Analytics />
+      </KmenuWrapper>
     </ThemeProvider>
   );
 };

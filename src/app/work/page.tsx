@@ -6,15 +6,18 @@ import ProjectCard from "../components/projectCard";
 
 import { motion } from "framer-motion";
 import { Section } from "@/layouts/section";
+import { Container } from "@/layouts/container";
 
 function Work() {
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5 }}
-    >
-      {/* <Section className="px-4 flex flex-col justify-center md:mt-14 pt-14 mx-auto md:p-20 mb-10"> */}
+    // <motion.div
+    //   initial={{ opacity: 0, scale: 0.5 }}
+    //   animate={{ opacity: 1, scale: 1 }}
+    //   transition={{ duration: 0.5 }}
+    // >
+    // <Section className="px-4 flex flex-col justify-center md:mt-14 pt-14 mx-auto md:p-20 mb-10">
+
+    <Container data-aos="fade-up">
       <div className="px-4 flex flex-col justify-center md:mt-14 pt-14 mx-auto md:p-20 mb-10">
         <h2 className="text-xl font-semibold md:text-3xl md:ml-10 md:pl-16 pb-10 b">
           Selected work
@@ -26,8 +29,9 @@ function Work() {
           ))}
         </div>
       </div>
-      {/* </Section> */}
-    </motion.div>
+    </Container>
+    //  </Section>
+    //  </motion.div>
   );
 }
 

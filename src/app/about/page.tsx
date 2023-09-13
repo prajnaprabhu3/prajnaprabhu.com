@@ -9,6 +9,9 @@ import { contactLinks } from "@/../data/contact";
 import { motion } from "framer-motion";
 
 import { Section } from "@/layouts/section";
+import { Container } from "@/layouts/container";
+
+import Aos from "aos";
 
 const social = [
   {
@@ -31,11 +34,7 @@ const social = [
 
 function About() {
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.5 }}
-    >
+    <Container data-aos="fade-up">
       {/* <Section className="z-8 gap-y-20 px-4 flex flex-col md:gap-y-28 md:max-w-2xl 2xl:max-w-4xl mx-auto md:px-4 2xl:px-20 mt-10 md:mt-2 md:pt-20 "> */}
       <div className="z-8 gap-y-20 px-4 flex flex-col md:gap-y-28 md:max-w-2xl 2xl:max-w-4xl mx-auto md:px-4 2xl:px-20 mt-10 md:mt-2 md:pt-20 ">
         {/* <motion.div
@@ -137,7 +136,8 @@ function About() {
         {/* </motion.div> */}
       </div>
       {/* </Section> */}
-    </motion.div>
+      {/* </motion.div> */}
+    </Container>
   );
 }
 

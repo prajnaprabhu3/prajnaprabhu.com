@@ -104,7 +104,8 @@ function Navbar() {
       {/* logo  */}
       <Link href="/">
         <div className="flex justify-center text-xl items-center">
-          <p>prajna</p>
+          {/* <span className="text-[18px] font-semibold text-myColor mr-1">@</span> */}
+          <p className="text-[20px]">prajna</p>
           <span className="text-3xl text-myColor mb-1">.</span>
         </div>
       </Link>

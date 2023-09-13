@@ -8,6 +8,8 @@ import useSound from "use-sound";
 import BlurImage from "./blurImage";
 
 import { motion } from "framer-motion";
+import { Container } from "@/layouts/container";
+import { useTheme } from "next-themes";
 
 function Main() {
   const { toggle } = useKmenu();
@@ -19,24 +21,19 @@ function Main() {
   }
 
   return (
-    // <div>
     // <motion.div
     //   initial={{ opacity: 0, scale: 0.5 }}
     //   animate={{ opacity: 1, scale: 1 }}
     //   transition={{ duration: 0.5 }}
     // >
-    <motion.div
-      // initial={{ opacity: 0, scale: 0.5 }}
-      // animate={{ opacity: 1, scale: 1 }}
-      // transition={{ duration: 0.5 }}
-      initial={{ y: 10, opacity: 0, scale: 0.99, rotate: "0.25deg" }}
-      animate={{ y: 0, opacity: 1, scale: 1, rotate: "0deg" }}
-      transition={{ duration: 0.25, delay: 0.1 }}
-      // transitionTimingFunction="cubic-bezier(.4,0,.2,1)"
-      // transformOrigin="0 0"
-      exit={{ y: 0 }}
-      // mb={mb}
-    >
+    // <motion.div
+    //   initial={{ y: 10, opacity: 0, scale: 0.99, rotate: "0.25deg" }}
+    //   animate={{ y: 0, opacity: 1, scale: 1, rotate: "0deg" }}
+    //   transition={{ duration: 0.25, delay: 0.1 }}
+    //   exit={{ y: 0 }}
+    //   // mb={mb}
+    // >
+    <div>
       <div className="flex-col-reverse px-2 mt-14 lg:flex-col-reverse lg:mt-0 xl:flex-row  flex justify-center items-center md:px-48 2xl:w-3/4 mx-auto">
         {/* short about me  */}
         <div className="text-sm  leading-6 flex w-ful py-6 px-4 md:px-14 flex-col justify-center gap-y-10 lg:w-2/3 md:text-md dark:text-zinc-400 mainText ">
@@ -108,8 +105,8 @@ function Main() {
       </div>
 
       <New />
-    </motion.div>
-    // </div>
+      {/* </motion.div> */}
+    </div>
   );
 }
 
