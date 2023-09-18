@@ -43,16 +43,8 @@ const Books: React.FC = () => {
   // console.log(books);
 
   return (
-    // <motion.div
-    //   initial={{ opacity: 0, scale: 0.5 }}
-    //   animate={{ opacity: 1, scale: 1 }}
-    //   transition={{ duration: 0.5 }}
-    // >
-    //  <Section className="flex w-full flex-col justify-center mx-auto md:w-1/2 2xl:w-1/3 mt-20">
     <Container data-aos="fade-up">
-      <div className="flex w-full flex-col justify-center mx-auto md:w-1/2 2xl:w-1/3 mt-20">
-        {/* <Garden /> */}
-
+      {/* <div className="flex w-full flex-col justify-center mx-auto md:w-1/2 2xl:w-1/3 mt-20">
         <h2 className="mx-auto text-4xl">Books</h2>
 
         <div className="grid grid-cols-1 justify-items-center md:grid-cols-2 gap-x-8 gap-y-12  my-12">
@@ -60,10 +52,9 @@ const Books: React.FC = () => {
             <BookCard book={item} key={id} />
           ))}
         </div>
-      </div>
+      </div> */}
+      <p className="text-myColor">Coming Soon</p>
     </Container>
-    //  </Section>
-    //  </motion.div>
   );
 };
 
