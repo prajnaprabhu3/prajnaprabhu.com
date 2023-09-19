@@ -44,7 +44,7 @@ const Books: React.FC = () => {
 
   return (
     <Container data-aos="fade-up">
-      {/* <div className="flex w-full flex-col justify-center mx-auto md:w-1/2 2xl:w-1/3 mt-20">
+      <div className="flex w-full flex-col justify-center mx-auto md:w-1/2 2xl:w-1/3 mt-20">
         <h2 className="mx-auto text-4xl">Books</h2>
 
         <div className="grid grid-cols-1 justify-items-center md:grid-cols-2 gap-x-8 gap-y-12  my-12">
@@ -52,8 +52,8 @@ const Books: React.FC = () => {
             <BookCard book={item} key={id} />
           ))}
         </div>
-      </div> */}
-      <p className="text-myColor">Coming Soon</p>
+      </div>
+      {/* <p className="text-myColor">Coming Soon</p> */}
     </Container>
   );
 };
