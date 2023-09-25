@@ -1,3 +1,13 @@
+
+### Prajna Prabhu
+
+My personal space on the internet. To share thoughts and everything in between!
+> will gradually move to something more minimal !
+
+![final](https://github.com/Prajnaprabhu3/example/assets/74554892/d2d8425f-0f3f-4ea9-8700-37fb00fe5f81)
+
+
+
 - [x] setup husky
 - [x] bottom nav for mobile
 - [x] Favicon fix
