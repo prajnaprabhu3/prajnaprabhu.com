@@ -11,18 +11,12 @@ export const bookmark = [
   {
     url: "https://ciechanow.ski/gps/",
   },
-  // {
-  //   url: "https://www.kalzumeus.com/2020/10/09/four-years-at-stripe/",
-  // },
   {
     url: "https://www.kalzumeus.com/2012/08/13/doubling-saas-revenue/",
   },
   {
     url: "https://longform.asmartbear.com/fulfillment/",
   },
-  // {
-  //   url: "https://longform.asmartbear.com/startup-life/",
-  // },
   {
     url: "https://longform.asmartbear.com/extreme-questions/",
   },

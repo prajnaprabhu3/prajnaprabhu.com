@@ -1,13 +1,8 @@
 "use client";
 
-// import { useEffect, useState } from "react";
-// import Garden from "../components/garden";
-// import { Fetch } from "./fetch";
 import { books } from "../../../data/books";
-import BookCard from "../components/bookCard";
+import BookCard from "@/components/books/bookCard";
 
-import { motion } from "framer-motion";
-import { Section } from "@/layouts/section";
 import { Container } from "@/layouts/container";
 
 // export async function Fetch(isbn: string) {

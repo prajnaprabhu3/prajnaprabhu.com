@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Main from "@/app/components/Main";
+import Main from "@/components/home/Main";
 import { Section } from "@/layouts/section";
 import { Container } from "@/layouts/container";
 

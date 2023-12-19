@@ -1,18 +1,11 @@
 "use client";
 
 import { ReactNode } from "react";
-
-import { MenuProvider, MenuConfig } from "kmenu";
-import "kmenu/dist/index.css";
-import Palette from "./components/palette";
 import { useTheme } from "next-themes";
+import { MenuProvider, MenuConfig } from "kmenu";
+import Palette from "../components/palette";
 
-// interface Dimensions {
-//   width: number;
-//   height: number;
-// }
-
-// type PartialDimensions = Partial<Dimensions>;
+import "kmenu/dist/index.css";
 
 export const KmenuWrapper = ({ children }: { children?: ReactNode }) => {
   const { theme } = useTheme();
@@ -43,14 +36,6 @@ export const KmenuWrapper = ({ children }: { children?: ReactNode }) => {
     boxShadow: "0px 0px 0px 0px #00000020",
   };
 
-  // const Dimension: MenuProviderProps = {
-  //   sectionHeight: 50,
-  // };
-
-  // const dimension: MenuDimension = {
-  //   sectionHeight: 200,
-  //   commandHeight: 40,
-  // };
   return (
     <>
       {theme === "dark" ? (

@@ -5,7 +5,7 @@ const New = () => {
   return (
     <div className="mt-16 sm:mt-20">
       {/* <div className="max-w-lg px-10"> */}
-      <h1 className="px-6 text-3xl font-bold tracking-tight md:px-10 my-10 ">
+      <h1 className="px-6 text-2xl font-bold tracking-tight md:px-10 my-10 ">
         Few Clicks
       </h1>
       {/* </div> */}

@@ -8,7 +8,7 @@ const PostPreview = (props: PostMetadata, id: number) => {
     <Link
       href={`blog/${props.slug}`}
       key={id}
-      className="flex flex-col gap-2 -mt-4 group rounded-md p-5 hover:dark:bg-[#1a1b1c] hover:bg-[#ebe8e8] hover:-translate-y-1 duration-200 ease-out cursor-pointer"
+      className="flex flex-col gap-2 -mt-4 group rounded-lg p-5 hover:dark:bg-[#1a1b1c] hover:bg-[#ebe8e8] hover:-translate-y-1 duration-200 ease-out cursor-pointer"
     >
       <div className="flex items-center gap-2">
         <h1 className="text-xl font-semibold">{props.title}</h1>
