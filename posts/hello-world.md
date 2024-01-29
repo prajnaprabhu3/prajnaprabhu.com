@@ -1,7 +1,8 @@
 ---
 title: "Hello World!"
 subtitle: "So yeah, I finally have a blog now!"
-date: "30 March 2023  •  1 min read"
+date: 30 March 2023
+duration: "1 min read"
 ---
 
 **TL;DR:** I redesigned and rebuilt my blog with Nextjs, Tailwind, MDX with certain other tools, and served to vercel.

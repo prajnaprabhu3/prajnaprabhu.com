@@ -1,9 +1,5 @@
 import About from "@/components/about";
-
 import { Container } from "@/layouts/container";
-
-// import Aos from "aos";
-
 import { NextPage } from "next";
 
 export const metadata = { title: "About" };

@@ -3,7 +3,6 @@
 import React from "react";
 import { OrbitControls } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { useRef } from "react";
 
 const Graphic = () => {
   return (
@@ -18,7 +17,7 @@ const Graphic = () => {
 export default Graphic;
 
 function PixelatedSphere() {
-  const sphereRef = useRef();
+  const sphereRef = React.useRef();
 
   useFrame(({ clock }: { clock: any }) => {
     if (sphereRef.current) {
@@ -36,7 +35,7 @@ function PixelatedSphere() {
 }
 
 function Birds() {
-  const groupRef = useRef();
+  const groupRef = React.useRef();
 
   useFrame(({ clock }: { clock: any }) => {
     if (!groupRef.current) return;

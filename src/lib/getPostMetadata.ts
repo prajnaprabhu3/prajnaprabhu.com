@@ -1,5 +1,4 @@
 import fs from "fs";
-import Link from "next/link";
 import matter from "gray-matter";
 import { PostMetadata } from "@/types/PostMetadata";
 
@@ -11,16 +10,19 @@ const getPostMetadata = (): PostMetadata[] => {
   // return slugs;
 
   // get gray-matter data from each file
-  const posts = markdownPosts.map((fileName) => {
-    const fileContents = fs.readFileSync(`posts/${fileName}`, "utf8");
-    const matterResult = matter(fileContents);
-    return {
-      title: matterResult.data.title,
-      date: matterResult.data.date,
-      subtitle: matterResult.data.subtitle,
-      slug: fileName.replace(".md", ""),
-    };
-  });
+  const posts = markdownPosts
+    .map((fileName) => {
+      const fileContents = fs.readFileSync(`posts/${fileName}`, "utf8");
+      const matterResult = matter(fileContents);
+      return {
+        title: matterResult.data.title,
+        date: new Date(matterResult.data.date), // Convert date string to Date object
+        duration: matterResult.data.duration,
+        subtitle: matterResult.data.subtitle,
+        slug: fileName.replace(".md", ""),
+      };
+    })
+    .sort((a, b) => b.date.getTime() - a.date.getTime()); // Sort by date in descending order
 
   return posts;
 };

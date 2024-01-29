@@ -1,6 +1,5 @@
 import SectionAbout from "./section";
 import { contactLinks } from "@/../../data/contact";
-import Link from "next/link";
 import { FiMail, FiGithub, FiTwitter, FiLinkedin } from "react-icons/fi";
 import { RxArrowTopRight } from "react-icons/rx";
 

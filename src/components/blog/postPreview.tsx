@@ -1,4 +1,5 @@
 import { PostMetadata } from "@/types/PostMetadata";
+import { formatDate } from "@/lib/formatDate";
 import Link from "next/link";
 
 import { BsArrowRightShort } from "react-icons/bs";
@@ -15,7 +16,9 @@ const PostPreview = (props: PostMetadata, id: number) => {
         <BsArrowRightShort className="hidden group-hover:block group-hover:text-2xl" />
       </div>
       <h4 className="text-zinc-500 text-sm">{props.subtitle}</h4>
-      <p className="text-xs text-zinc-400 dark:text-zinc-600">{props.date}</p>
+      <p className="text-xs text-zinc-400 dark:text-zinc-600">
+        {formatDate(props.date)} <span> • {props.duration}</span>
+      </p>
     </Link>
   );
 };
