@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import React from "react";
-import { useState } from "react";
+import React,{useState } from "react";
 import { motion } from "framer-motion";
+import { useUserLocation } from "@/hooks/useUserLocation";
+
 
 const tabs = [
   { id: "home", label: "Home", path: "/" },
@@ -15,6 +16,8 @@ const tabs = [
 
 function Footer() {
   const [activeTab, setActiveTab] = useState(tabs[0].id);
+  const userLocation=useUserLocation();
+
   return (
     <>
       <div className="space-x-2 pt-8 z-100 sticky bottom-4 md:hidden lg:hidden flex justify-around md:space-x-10 items-center">
@@ -45,11 +48,14 @@ function Footer() {
         </div>
       </div>
 
-      <div className="hidden h-12 md:flex lg:flex z-10  dark:bg-[#141516] justify-center text-sm py-4 font-normal text-zinc-600 border-t  md:dark:border-zinc-800">
+      <div className="hidden h-12 md:flex lg:flex z-10  dark:bg-[#141516] justify-between px-36 text-[13px] py-3 font-normal text-zinc-600 border-t md:dark:border-zinc-800">
         <p>© Prajna Prabhu 2023. No cookies here 🍪 </p>
+        <p className=""> Last visitor from {userLocation.location} </p>
       </div>
     </>
   );
 }
 
 export default Footer;
+
+

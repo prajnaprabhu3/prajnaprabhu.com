@@ -10,29 +10,28 @@ interface ProjectProps {
   live?: string;
   description: string;
   img: string;
-  stack: Array<string>;
+  stack: Array<string>; 
 }
 
 const ProjectCard: React.FC<ProjectProps> = (props: ProjectProps) => {
   return (
-    <div className="flex items-center gap-4 md:gap-10 px-3 md:px-6 py-4 mx-3 md:mx-10 group hover:dark:bg-[#1a1b1c] hover:bg-[#ebe8e8]  duration-200 ease-out rounded-lg">
+    <div className="flex items-center gap-4 md:gap-10 px-3 md:px-6 py-4 mx-3 md:mx-10 group hover:dark:bg-[#1a1b1c] hover:bg-[#ebe8e8]  duration-200 ease-out rounded-lg cursor-pointer">
       {/* image  */}
-      <Image
+      {/* <Image
         src={props.img}
         alt={props.title}
         width={60}
         height={60}
         className="rounded-lg object-cover"
-      />
+      /> */}
 
       {/* description  */}
       <div>
-        <div className="flex items-center">
+        <div className="flex items-center gap-2">
           <h2 className="text-xs md:text-sm font-semibold">{props.title}</h2>
           <BsArrowRightShort className="text-zinc-500 hidden group-hover:block group-hover:text-2xl" />
         </div>
         <p className="text-[11px] md:text-[13px] mt-1 text-zinc-500">
-          {" "}
           {props.description}
         </p>
       </div>

@@ -11,7 +11,7 @@ function Blog() {
   ));
   return (
     <Container
-      className="h-screen flex flex-col justify-between"
+      className="h-screen flex flex-col justify-between mt-4 md:mt-0"
       data-aos="fade-up"
     >
       <div className="flex w-full flex-col justify-center px-4 mx-auto md:w-[650px] 2xl:w-1/3 md:mt-[80px]">

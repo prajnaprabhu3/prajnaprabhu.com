@@ -5,7 +5,7 @@ export const projects = [
     github: "https://github.com/Prajnaprabhu3/ETHIndia22",
     live: "https://github.com/Prajnaprabhu3/ETHIndia22",
     description:
-      "An ecommerce marketplace with buy and sell features, with payment integration using stripe ",
+    "Set up smart contract alerts to receive notifications for events, with the platform seamlessly forwarding them to Slack, MS Teams, and more.",
     img: "/images/projects/onee.png",
     stack: ["Reactjs", "Django", "Solidity"],
   },
@@ -15,8 +15,7 @@ export const projects = [
     github: "https://github.com/Prajnaprabhu3/ecom",
     live: "https://ecom-okay.netlify.app/",
     description:
-      "Set up smart contract alerts to receive notifications for events, with the platform seamlessly forwarding them to Slack, MS Teams, and more.",
-
+    "An ecommerce marketplace with buy and sell features, with payment integration using stripe ",
     img: "/images/projects/twoo.png",
     stack: ["Reactjs", "MongoDB", "Express.js", "Nodejs"],
   },
@@ -33,10 +32,10 @@ export const projects = [
   {
     id: 4,
     title: "Portfolio",
-    github: "https://github.com/Prajnaprabhu3/portfolio-v2",
+    github: "https://github.com/Prajnaprabhu3/prajnaprabhu.com",
     live: "https://prajnaprabhu.com",
     description:
-      "The site you are viewing, my personal portfolio! Took efforts and time to build it. So have included it here.",
+      "The site you are currently viewing, my personal website! Took efforts and time to build it. So have included it here :)",
     img: "/images/projects/fourr.png",
     stack: ["Nextjs", "tailwind", "framer-motion", "MDX"],
   },
@@ -44,11 +43,21 @@ export const projects = [
     id: 5,
     title: "Markit",
     github: "https://github.com/Prajnaprabhu3/markit",
-    live: "https://markitlive.vercel.app/",
+    live: "https://markitmd.vercel.app/",
     description:
       "A minimal web based markdown editor with easy to use features built with nextjs, typescript",
     img: "/images/projects/fivee.png",
-    stack: ["Nextjs", "tailwind", "framer-motion", "MDX"],
+    stack: ["Nextjs", "Tailwind", "Framer-motion", "Typescript"],
+  },
+  {
+    id: 6,
+    title: "Crafts",
+    gtihub: "https://github.com/Prajnaprabhu3/crafts",
+    live: "https://craft.prajnaprabhu.com",
+    description:
+      "This is the place where I try to be creative and  experiment with different user interface and interaction",
+    img: "/images/projects/sixx.png",
+    stack: ["Nextjs", "tailwind", "Javascript"],
   },
   {
     id: 6,
@@ -58,6 +67,6 @@ export const projects = [
     description:
       "A simple utility tool built using nextjs, javascript to get the hexcodes used in your image",
     img: "/images/projects/sixx.png",
-    stack: ["Nextjs", "tailwind", "framer-motion", "MDX"],
+    stack: ["Nextjs", "tailwind", "Javascript"],
   },
 ];

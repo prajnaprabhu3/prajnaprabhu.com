@@ -22,7 +22,7 @@ const GuestBook = async () => {
         <p className="text-myColor">Prajna:</p>
         <p>hi, just a trial message</p>
       </div> */}
-      <h2 className="text-xl text-myColor">Coming Soon</h2>
+      <h2 className="text-xl text-myColor">wip...</h2>
     </div>
   );
 };

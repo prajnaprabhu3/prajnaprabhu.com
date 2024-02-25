@@ -5,7 +5,7 @@ import { Container } from "@/layouts/container";
 
 function Work() {
   return (
-    <Container data-aos="fade-up" className="mb-16">
+    <Container data-aos="fade-up" className="mb-18">
       <h1 className="text-3xl relative px-4 md:px-0 md:left-[420px] 2xl:left-[630px] mb-4 mt-16">
         Projects
       </h1>

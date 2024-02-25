@@ -20,13 +20,15 @@ import { useTheme } from "next-themes";
 
 //data
 import { contactLinks } from "@/../data/contact";
+import { usePathname } from "next/navigation";
 
 const tabs = [
-  { id: "home", label: "Home", path: "/" },
+  // { id: "", label: "Home", path: "/" },
   { id: "about", label: "About", path: "/about" },
-  { id: "work", label: "Work", path: "/work" },
+  { id: "work", label: "Project", path: "/work" },
   { id: "blog", label: "Blog", path: "/blog" },
   { id: "books", label: "Books", path: "/books" },
+  { id: "guestbook", label: "Sign", path: "/guestbook" },
 ];
 
 const social = [
@@ -61,6 +63,7 @@ function Navbar() {
     volume: 0.1,
   });
   const [mounted, setMounted] = useState(false);
+  const path=usePathname()
 
   useEffect(() => {
     setMounted(true);
@@ -111,22 +114,22 @@ function Navbar() {
       </Link>
 
       {/* navigation */}
-      <div className="hidden  md:flex lg:flex sticky bottom-0 space-x-1.5 w-96 rounded-full py-1.5 px-2 dark:border-2  bg-[#ece8e8]  dark:bg-[#141516]  dark:border-zinc-800 dark:drop-shadow-md backdrop-filter backdrop-blur-xl  dark:bg-opacity-30">
+      <div className="hidden  md:flex lg:flex justify-center space-x-1 sticky bottom-0 w-96 rounded-full py-1.5 px-2 dark:border-2  bg-[#ece8e8]  dark:bg-[#141516]  dark:border-zinc-800 dark:drop-shadow-md backdrop-filter backdrop-blur-xl  dark:bg-opacity-30">
         {tabs.map((tab) => (
           <button
             key={tab.id}
             onClick={() => setActiveTab(tab.id)}
             className={`${
-              activeTab === tab.id ? "text-myColor" : "hover:text-myColor"
+              path.includes(tab.id)? "text-myColor" : "hover:text-myColor"
             } relative rounded-full px-4 py-1 text-sm font-lighter text-zinc-350  transition focus-visible:outline-2`}
             style={{
               WebkitTapHighlightColor: "transparent",
             }}
           >
-            {activeTab === tab.id && (
+            {path.includes(tab.id) && (
               <motion.span
                 layoutId="bubble"
-                className="absolute inset-0 -z-20 bg-white dark:bg-[#262626] py-2 "
+                className="absolute inset-0 -z-20 bg-white dark:bg-[#262626] py-2"
                 style={{ borderRadius: 9999 }}
                 transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
               />
