@@ -11,7 +11,7 @@ const Experience = () => {
 
       <div className="flex flex-col gap-10">
         {experience.map((item) => (
-          <div key={item.id} className="flex gap-4 md:pr-10">
+          <div key={item.id} className="flex items-center gap-4 md:pr-10">
             <Image
               src={item.img}
               alt="item.title"
